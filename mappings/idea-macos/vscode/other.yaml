@@ -291,3 +291,15 @@ mapping:
         ]
     idea:
       missing: true
+  - id: "terminal.newline"
+    binding:
+      - "shift+[enter]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u001b[13;2u"
+      context: ["terminalFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true

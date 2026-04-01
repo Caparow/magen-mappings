@@ -82,11 +82,11 @@
         "squish-find-the-brains": "squish-find-the-brains"
       },
       "locked": {
-        "lastModified": 1774617467,
-        "narHash": "sha256-dxZ7MXVh1GGmckLXOAXB16zTHrCeL+Og3dP3EVBjrjM=",
+        "lastModified": 1775034402,
+        "narHash": "sha256-1DzHaHDcMaE9PyKNnbMtpNPdX6s1o7EmEcBusk2LoXg=",
         "owner": "pshirshov",
         "repo": "magen",
-        "rev": "89af3315f2cd822a70f6ae3f71b40df3ab25b6f9",
+        "rev": "ba4f1efa0952342003d747a5f6008836e95323dd",
         "type": "github"
       },
       "original": {

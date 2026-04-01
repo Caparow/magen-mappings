@@ -1,4 +1,14 @@
 mapping:
+  - id: "SearchEverywhere"
+    binding:
+      - "shift shift"
+    idea:
+      action: "SearchEverywhere"
+    vscode:
+      action: "workbench.action.showAllSymbols"
+    zed:
+      action: "project_symbols::Toggle"
+      context: ["Workspace"]
   - id: "Find"
     binding:
       macos: "meta+[KeyF]"
@@ -53,6 +63,28 @@ mapping:
     vscode:
       action: "editor.action.previousMatchFindAction"
       context: ["editorFocus"]
+    zed:
+      action: "search::SelectPreviousMatch"
+      context: ["BufferSearchBar"]
+  - id: "FindNextFromInput"
+    binding:
+      - "[enter]"
+    idea:
+      action: "FindNext"
+    vscode:
+      action: "editor.action.nextMatchFindAction"
+      context: ["editorFocus && findInputFocussed"]
+    zed:
+      action: "search::SelectNextMatch"
+      context: ["BufferSearchBar"]
+  - id: "FindPreviousFromInput"
+    binding:
+      - "shift+[enter]"
+    idea:
+      action: "FindPrevious"
+    vscode:
+      action: "editor.action.previousMatchFindAction"
+      context: ["editorFocus && findInputFocussed"]
     zed:
       action: "search::SelectPreviousMatch"
       context: ["BufferSearchBar"]

@@ -85,7 +85,7 @@ mapping:
       action: "EditorDeleteLine"
     vscode:
       action: "editor.action.deleteLines"
-      context: ["textInputFocus && !editorReadonly"]
+      context: ["textInputFocus && !editorReadonly && !terminalFocus"]
     zed:
       action: "editor::DeleteLine"
       context: ["Editor"]
@@ -96,7 +96,7 @@ mapping:
       action: "EditorDeleteToWordEnd"
     vscode:
       action: "deleteWordRight"
-      context: ["textInputFocus && !editorReadonly"]
+      context: ["textInputFocus && !editorReadonly && !terminalFocus"]
     zed:
       action: "editor::DeleteToNextWordEnd"
       context: ["Editor"]
@@ -107,7 +107,7 @@ mapping:
       action: "EditorDeleteToWordStart"
     vscode:
       action: "deleteWordLeft"
-      context: ["textInputFocus && !editorReadonly"]
+      context: ["textInputFocus && !editorReadonly && !terminalFocus"]
     zed:
       action: "editor::DeleteToPreviousWordStart"
       context: ["Editor"]

@@ -1,0 +1,1035 @@
+mapping:
+  # Find
+  - id: "terminal.focusFind"
+    binding:
+      macos:
+        - "meta+[KeyF]"
+        - "ctrl+[KeyF]"
+      default:
+        - "ctrl+[KeyF]"
+    vscode:
+      action: "workbench.action.terminal.focusFind"
+      context:
+        [
+          "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.findNext"
+    binding:
+      - "[F3]"
+    vscode:
+      action: "workbench.action.terminal.findNext"
+      context:
+        [
+          "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.findNextFromInput"
+    binding:
+      - "shift+[enter]"
+    vscode:
+      action: "workbench.action.terminal.findNext"
+      context:
+        [
+          "terminalFindInputFocused && terminalHasBeenCreated || terminalFindInputFocused && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.findPrevious"
+    binding:
+      - "shift+[F3]"
+    vscode:
+      action: "workbench.action.terminal.findPrevious"
+      context:
+        [
+          "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.findPreviousFromInput"
+    binding:
+      - "[enter]"
+    vscode:
+      action: "workbench.action.terminal.findPrevious"
+      context:
+        [
+          "terminalFindInputFocused && terminalHasBeenCreated || terminalFindInputFocused && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.hideFind"
+    binding:
+      - "shift+[escape]"
+    vscode:
+      action: "workbench.action.terminal.hideFind"
+      context:
+        [
+          "terminalFindVisible && terminalFocusInAny && terminalHasBeenCreated || terminalFindVisible && terminalFocusInAny && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.hideFindEsc"
+    binding:
+      - "[escape]"
+    vscode:
+      action: "workbench.action.terminal.hideFind"
+      context:
+        [
+          "terminalFindVisible && terminalFocusInAny && terminalHasBeenCreated || terminalFindVisible && terminalFocusInAny && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.toggleFindCaseSensitive"
+    binding:
+      - "alt+[KeyC]"
+    vscode:
+      action: "workbench.action.terminal.toggleFindCaseSensitive"
+      context:
+        [
+          "terminalFindVisible && terminalHasBeenCreated || terminalFindVisible && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.toggleFindRegex"
+    binding:
+      - "alt+[KeyR]"
+    vscode:
+      action: "workbench.action.terminal.toggleFindRegex"
+      context:
+        [
+          "terminalFindVisible && terminalHasBeenCreated || terminalFindVisible && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.toggleFindWholeWord"
+    binding:
+      - "alt+[KeyW]"
+    vscode:
+      action: "workbench.action.terminal.toggleFindWholeWord"
+      context:
+        [
+          "terminalFindVisible && terminalHasBeenCreated || terminalFindVisible && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.searchWorkspace"
+    binding:
+      - "ctrl+shift+[KeyF]"
+    vscode:
+      action: "workbench.action.terminal.searchWorkspace"
+      context:
+        [
+          "terminalFocus && terminalProcessSupported && terminalTextSelected",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+
+  # Scrolling
+  - id: "terminal.scrollDown"
+    binding:
+      - "ctrl+shift+[down]"
+    vscode:
+      action: "workbench.action.terminal.scrollDown"
+      context:
+        [
+          "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.scrollDownPage"
+    binding:
+      - "shift+[pagedown]"
+    vscode:
+      action: "workbench.action.terminal.scrollDownPage"
+      context:
+        [
+          "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.scrollToBottom"
+    binding:
+      - "shift+[end]"
+    vscode:
+      action: "workbench.action.terminal.scrollToBottom"
+      context:
+        [
+          "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.scrollToTop"
+    binding:
+      - "shift+[home]"
+    vscode:
+      action: "workbench.action.terminal.scrollToTop"
+      context:
+        [
+          "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.scrollUp"
+    binding:
+      - "ctrl+shift+[up]"
+    vscode:
+      action: "workbench.action.terminal.scrollUp"
+      context:
+        [
+          "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.scrollUpPage"
+    binding:
+      - "shift+[pageup]"
+    vscode:
+      action: "workbench.action.terminal.scrollUpPage"
+      context:
+        [
+          "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.scrollToNextCommand"
+    binding:
+      - "ctrl+[down]"
+    vscode:
+      action: "workbench.action.terminal.scrollToNextCommand"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.scrollToPreviousCommand"
+    binding:
+      - "ctrl+[up]"
+    vscode:
+      action: "workbench.action.terminal.scrollToPreviousCommand"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.selectToNextCommand"
+    binding:
+      - "ctrl+shift+[down]"
+    vscode:
+      action: "workbench.action.terminal.selectToNextCommand"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.selectToPreviousCommand"
+    binding:
+      - "ctrl+shift+[up]"
+    vscode:
+      action: "workbench.action.terminal.selectToPreviousCommand"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+
+  # Send sequences
+  - id: "terminal.sendSequence.ctrlSpace.pwsh"
+    binding:
+      - "ctrl+[Space]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u001b[24~a"
+      context:
+        [
+          "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.sendSequence.altSpace.pwsh"
+    binding:
+      - "alt+[Space]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u001b[24~b"
+      context:
+        [
+          "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.sendSequence.shiftEnter.pwsh"
+    binding:
+      - "shift+[enter]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u001b[24~c"
+      context:
+        [
+          "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.sendSequence.ctrlAltR"
+    binding:
+      - "ctrl+alt+[KeyR]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u0012"
+      context: ["accessibilityModeEnabled && terminalFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.sendSequence.ctrlAltG"
+    binding:
+      - "ctrl+alt+[KeyG]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u0007"
+      context: ["terminalFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.sendSequence.ctrlBackspace"
+    binding:
+      - "ctrl+[Backspace]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u0017"
+      context: ["terminalFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.sendSequence.ctrlDelete"
+    binding:
+      - "ctrl+[delete]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u001bd"
+      context: ["terminalFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.sendSequence.ctrlShift2"
+    binding:
+      - "ctrl+shift+[Digit2]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u0000"
+      context: ["terminalFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.sendSequence.ctrlShift6"
+    binding:
+      - "ctrl+shift+[Digit6]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u001e"
+      context: ["terminalFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.sendSequence.ctrlSlash"
+    binding:
+      - "ctrl+[Slash]"
+    vscode:
+      action: "workbench.action.terminal.sendSequence"
+      args:
+        text: "\u001f"
+      context: ["terminalFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+
+  # Pane and tab management
+  - id: "terminal.focusNext"
+    binding:
+      - "ctrl+[pagedown]"
+    vscode:
+      action: "workbench.action.terminal.focusNext"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.focusPrevious"
+    binding:
+      - "ctrl+[pageup]"
+    vscode:
+      action: "workbench.action.terminal.focusPrevious"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.focusTabs"
+    binding:
+      - "ctrl+shift+[Backslash]"
+    vscode:
+      action: "workbench.action.terminal.focusTabs"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.split"
+    binding:
+      - "ctrl+shift+[Digit5]"
+    vscode:
+      action: "workbench.action.terminal.split"
+      context:
+        [
+          "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.splitActiveTab"
+    binding:
+      - "ctrl+shift+[Digit5]"
+    vscode:
+      action: "workbench.action.terminal.splitActiveTab"
+      context: ["terminalProcessSupported && terminalTabsFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.resizePaneLeft"
+    binding:
+      - "ctrl+shift+[left]"
+    vscode:
+      action: "workbench.action.terminal.resizePaneLeft"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.resizePaneRight"
+    binding:
+      - "ctrl+shift+[right]"
+    vscode:
+      action: "workbench.action.terminal.resizePaneRight"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+
+  # Selection and clipboard
+  - id: "terminal.clearSelection"
+    binding:
+      - "[escape]"
+    vscode:
+      action: "workbench.action.terminal.clearSelection"
+      context:
+        [
+          "terminalFocusInAny && terminalHasBeenCreated && terminalTextSelected && !terminalFindVisible || terminalFocusInAny && terminalProcessSupported && terminalTextSelected && !terminalFindVisible",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.copySelectionDefault"
+    binding:
+      - "ctrl+shift+[KeyC]"
+    vscode:
+      action: "workbench.action.terminal.copySelection"
+      context:
+        [
+          "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.pasteDefault"
+    binding:
+      - "ctrl+shift+[KeyV]"
+    vscode:
+      action: "workbench.action.terminal.paste"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.pasteSelection"
+    binding:
+      - "shift+[Insert]"
+    vscode:
+      action: "workbench.action.terminal.pasteSelection"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+
+  # Tab management
+  - id: "terminal.killActiveTab"
+    binding:
+      - "[delete]"
+    vscode:
+      action: "workbench.action.terminal.killActiveTab"
+      context:
+        [
+          "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.killEditor"
+    binding:
+      - "ctrl+[KeyW]"
+    vscode:
+      action: "workbench.action.terminal.killEditor"
+      context:
+        [
+          "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.renameActiveTab"
+    binding:
+      - "[F2]"
+    vscode:
+      action: "workbench.action.terminal.renameActiveTab"
+      context:
+        [
+          "terminalHasBeenCreated && terminalTabsFocus && terminalTabsSingularSelection || terminalProcessSupported && terminalTabsFocus && terminalTabsSingularSelection",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.new"
+    binding:
+      - "ctrl+shift+[Backquote]"
+    vscode:
+      action: "workbench.action.terminal.new"
+      context:
+        [
+          "terminalProcessSupported || terminalWebExtensionContributedProfile",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+
+  # Misc
+  - id: "terminal.goToRecentDirectory"
+    binding:
+      - "ctrl+[KeyG]"
+    vscode:
+      action: "workbench.action.terminal.goToRecentDirectory"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.runRecentCommand"
+    binding:
+      - "ctrl+[KeyR]"
+    vscode:
+      action: "workbench.action.terminal.runRecentCommand"
+      context:
+        [
+          "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.runRecentCommandAlt"
+    binding:
+      - "ctrl+alt+[KeyR]"
+    vscode:
+      action: "workbench.action.terminal.runRecentCommand"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.showQuickFixes"
+    binding:
+      - "ctrl+[Period]"
+    vscode:
+      action: "workbench.action.terminal.showQuickFixes"
+      context: ["terminalFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.sizeToContentWidth"
+    binding:
+      - "alt+[KeyZ]"
+    vscode:
+      action: "workbench.action.terminal.sizeToContentWidth"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.toggleTerminal"
+    binding:
+      - "ctrl+[Backquote]"
+    vscode:
+      action: "workbench.action.terminal.toggleTerminal"
+      context: ["terminal.active"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.openNativeConsole"
+    binding:
+      - "ctrl+shift+[KeyC]"
+    vscode:
+      action: "workbench.action.terminal.openNativeConsole"
+      context: ["!terminalFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.openDetectedLink"
+    binding:
+      - "ctrl+shift+[KeyO]"
+    vscode:
+      action: "workbench.action.terminal.openDetectedLink"
+      context: ["terminalFocus && terminalHasBeenCreated"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.openDetectedLinkAccessible"
+    binding:
+      - "ctrl+shift+[KeyG]"
+    vscode:
+      action: "workbench.action.terminal.openDetectedLink"
+      context:
+        [
+          "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+
+  # Suggest widget
+  - id: "terminal.acceptSelectedSuggestion"
+    binding:
+      - "[tab]"
+    vscode:
+      action: "workbench.action.terminal.acceptSelectedSuggestion"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.acceptSelectedSuggestionEnter"
+    binding:
+      - "[enter]"
+    vscode:
+      action: "workbench.action.terminal.acceptSelectedSuggestionEnter"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible && config.terminal.integrated.suggest.runOnEnter != 'ignore' || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible && config.terminal.integrated.suggest.runOnEnter != 'ignore'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.hideSuggestWidget"
+    binding:
+      - "[escape]"
+    vscode:
+      action: "workbench.action.terminal.hideSuggestWidget"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.requestCompletions"
+    binding:
+      - "ctrl+[Space]"
+    vscode:
+      action: "workbench.action.terminal.requestCompletions"
+      context:
+        [
+          "config.terminal.integrated.suggest.enabled && terminalFocus && terminalProcessSupported && terminalShellIntegrationEnabled",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.selectNextPageSuggestion"
+    binding:
+      - "[pagedown]"
+    vscode:
+      action: "workbench.action.terminal.selectNextPageSuggestion"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.selectNextSuggestion"
+    binding:
+      - "[down]"
+    vscode:
+      action: "workbench.action.terminal.selectNextSuggestion"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.selectPrevPageSuggestion"
+    binding:
+      - "[pageup]"
+    vscode:
+      action: "workbench.action.terminal.selectPrevPageSuggestion"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.selectPrevSuggestion"
+    binding:
+      - "[up]"
+    vscode:
+      action: "workbench.action.terminal.selectPrevSuggestion"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+
+  # Accessibility
+  - id: "terminal.focus"
+    binding:
+      - "ctrl+[down]"
+    vscode:
+      action: "workbench.action.terminal.focus"
+      context:
+        [
+          "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.focusAccessibleBuffer"
+    binding:
+      - "ctrl+[up]"
+    vscode:
+      action: "workbench.action.terminal.focusAccessibleBuffer"
+      context:
+        [
+          "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.focusAccessibleBufferAlt"
+    binding:
+      - "shift+alt+[F2]"
+    vscode:
+      action: "workbench.action.terminal.focusAccessibleBuffer"
+      context:
+        [
+          "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.focusHover"
+    binding:
+      - "ctrl+[KeyK] ctrl+[KeyI]"
+    vscode:
+      action: "workbench.action.terminal.focusHover"
+      context:
+        [
+          "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalIsOpen || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.scrollToBottomAccessibleView"
+    binding:
+      - "shift+[end]"
+    vscode:
+      action: "workbench.action.terminal.scrollToBottomAccessibleView"
+      context:
+        [
+          "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.scrollToTopAccessibleView"
+    binding:
+      - "shift+[home]"
+    vscode:
+      action: "workbench.action.terminal.scrollToTopAccessibleView"
+      context:
+        [
+          "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.accessibleBufferGoToNextCommand"
+    binding:
+      - "alt+[down]"
+    vscode:
+      action: "workbench.action.terminal.accessibleBufferGoToNextCommand"
+      context:
+        [
+          "accessibleViewIsShown && accessibleViewCurrentProviderId == 'terminal' || accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.accessibleBufferGoToPreviousCommand"
+    binding:
+      - "alt+[up]"
+    vscode:
+      action: "workbench.action.terminal.accessibleBufferGoToPreviousCommand"
+      context:
+        [
+          "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+
+  # Chat
+  - id: "terminal.chat.close"
+    binding:
+      - "[escape]"
+    vscode:
+      action: "workbench.action.terminal.chat.close"
+      context:
+        [
+          "terminalChatFocus && terminalChatVisible || terminalChatVisible && terminalFocus",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.chat.insertCommand"
+    binding:
+      - "ctrl+alt+[enter]"
+    vscode:
+      action: "workbench.action.terminal.chat.insertCommand"
+      context:
+        [
+          "terminalChatResponseContainsCodeBlock && terminalHasBeenCreated && !terminalChatActiveRequest && !terminalChatResponseContainsMultipleCodeBlocks || terminalChatResponseContainsCodeBlock && terminalProcessSupported && !terminalChatActiveRequest && !terminalChatResponseContainsMultipleCodeBlocks",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.chat.insertCommandAlt"
+    binding:
+      - "alt+[enter]"
+    vscode:
+      action: "workbench.action.terminal.chat.insertCommand"
+      context:
+        [
+          "terminalChatResponseContainsCodeBlock && terminalHasBeenCreated && !terminalChatActiveRequest && !terminalChatResponseContainsMultipleCodeBlocks || terminalChatResponseContainsCodeBlock && terminalProcessSupported && !terminalChatActiveRequest && !terminalChatResponseContainsMultipleCodeBlocks",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.chat.insertFirstCommand"
+    binding:
+      - "ctrl+alt+[enter]"
+    vscode:
+      action: "workbench.action.terminal.chat.insertFirstCommand"
+      context:
+        [
+          "terminalChatResponseContainsMultipleCodeBlocks && terminalHasBeenCreated && !terminalChatActiveRequest || terminalChatResponseContainsMultipleCodeBlocks && terminalProcessSupported && !terminalChatActiveRequest",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.chat.insertFirstCommandAlt"
+    binding:
+      - "alt+[enter]"
+    vscode:
+      action: "workbench.action.terminal.chat.insertFirstCommand"
+      context:
+        [
+          "terminalChatResponseContainsMultipleCodeBlocks && terminalHasBeenCreated && !terminalChatActiveRequest || terminalChatResponseContainsMultipleCodeBlocks && terminalProcessSupported && !terminalChatActiveRequest",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.chat.runCommand"
+    binding:
+      - "ctrl+[enter]"
+    vscode:
+      action: "workbench.action.terminal.chat.runCommand"
+      context:
+        [
+          "terminalChatResponseContainsCodeBlock && terminalHasBeenCreated && !terminalChatActiveRequest && !terminalChatResponseContainsMultipleCodeBlocks || terminalChatResponseContainsCodeBlock && terminalProcessSupported && !terminalChatActiveRequest && !terminalChatResponseContainsMultipleCodeBlocks",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.chat.runFirstCommand"
+    binding:
+      - "ctrl+[enter]"
+    vscode:
+      action: "workbench.action.terminal.chat.runFirstCommand"
+      context:
+        [
+          "terminalChatResponseContainsMultipleCodeBlocks && terminalHasBeenCreated && !terminalChatActiveRequest || terminalChatResponseContainsMultipleCodeBlocks && terminalProcessSupported && !terminalChatActiveRequest",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "terminal.chat.start"
+    binding:
+      - "ctrl+[KeyI]"
+    vscode:
+      action: "workbench.action.terminal.chat.start"
+      context:
+        [
+          "terminalChatAgentRegistered && terminalFocusInAny && terminalHasBeenCreated || terminalChatAgentRegistered && terminalFocusInAny && terminalProcessSupported",
+        ]
+    idea:
+      missing: true
+    zed:
+      missing: true

@@ -17,7 +17,7 @@ mapping:
       action: "Find"
     vscode:
       action: "actions.find"
-      context: ["editorFocus || editorIsOpen"]
+      context: ["(editorFocus || editorIsOpen) && !terminalFocus"]
     zed:
       action: "buffer_search::Deploy"
       context: ["Editor"]
@@ -107,7 +107,7 @@ mapping:
       action: "Replace"
     vscode:
       action: "editor.action.startFindReplaceAction"
-      context: ["editorFocus || editorIsOpen"]
+      context: ["(editorFocus || editorIsOpen) && !terminalFocus"]
     zed:
       action: "buffer_search::DeployReplace"
       context: ["Editor"]

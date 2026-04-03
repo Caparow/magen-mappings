@@ -6,7 +6,7 @@ mapping:
       action: "EditorDownWithSelection"
     vscode:
       action: "cursorDownSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectDown"
       context: ["Editor"]
@@ -17,7 +17,7 @@ mapping:
       action: "EditorUpWithSelection"
     vscode:
       action: "cursorUpSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectUp"
       context: ["Editor"]
@@ -28,7 +28,7 @@ mapping:
       action: "EditorLeftWithSelection"
     vscode:
       action: "cursorLeftSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectLeft"
       context: ["Editor"]
@@ -39,7 +39,7 @@ mapping:
       action: "EditorRightWithSelection"
     vscode:
       action: "cursorRightSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectRight"
       context: ["Editor"]
@@ -50,7 +50,7 @@ mapping:
       action: "EditorPageDownWithSelection"
     vscode:
       action: "cursorPageDownSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectPageDown"
       context: ["Editor"]
@@ -61,7 +61,7 @@ mapping:
       action: "EditorPageUpWithSelection"
     vscode:
       action: "cursorPageUpSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectPageUp"
       context: ["Editor"]
@@ -72,7 +72,7 @@ mapping:
       action: "EditorTextStartWithSelection"
     vscode:
       action: "cursorTopSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectToBeginning"
       context: ["Editor"]
@@ -83,7 +83,7 @@ mapping:
       action: "EditorTextEndWithSelection"
     vscode:
       action: "cursorBottomSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectToEnd"
       context: ["Editor"]
@@ -99,7 +99,7 @@ mapping:
       action: "EditorLineEndWithSelection"
     vscode:
       action: "cursorEndSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectToEndOfLine"
       context: ["Editor"]
@@ -115,7 +115,7 @@ mapping:
       action: "EditorLineStartWithSelection"
     vscode:
       action: "cursorHomeSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectToBeginningOfLine"
       context: ["Editor"]
@@ -130,7 +130,7 @@ mapping:
       action: "EditorNextWordWithSelection"
     vscode:
       action: "cursorWordEndRightSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectToNextWordEnd"
       context: ["Editor"]
@@ -145,7 +145,7 @@ mapping:
       action: "EditorPreviousWordWithSelection"
     vscode:
       action: "cursorWordLeftSelect"
-      context: ["textInputFocus"]
+      context: ["textInputFocus && !terminalFocus"]
     zed:
       action: "editor::SelectToPreviousWordStart"
       context: ["Editor"]

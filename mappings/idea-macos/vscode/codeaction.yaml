@@ -1,0 +1,58 @@
+mapping:
+  # Code action / lightbulb menu (e.g. "Add import" quick fix).
+  # Magen negates the VSCode defaults below by default, which left the menu
+  # unusable (Enter/Esc/arrows did nothing); re-added here to restore it.
+  - id: "acceptSelectedCodeAction"
+    binding:
+      - "enter"
+      - "ctrl+[Period]"
+    vscode:
+      action: "acceptSelectedCodeAction"
+      context: ["codeActionMenuVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "previewSelectedCodeAction"
+    binding:
+      - "ctrl+enter"
+    vscode:
+      action: "previewSelectedCodeAction"
+      context: ["codeActionMenuVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "selectNextCodeAction"
+    binding:
+      - "down"
+      - "ctrl+down"
+    vscode:
+      action: "selectNextCodeAction"
+      context: ["codeActionMenuVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "selectPrevCodeAction"
+    binding:
+      - "up"
+      - "ctrl+up"
+    vscode:
+      action: "selectPrevCodeAction"
+      context: ["codeActionMenuVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "hideCodeActionWidget"
+    binding:
+      - "escape"
+      - "shift+escape"
+    vscode:
+      action: "hideCodeActionWidget"
+      context: ["codeActionMenuVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true

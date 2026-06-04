@@ -1,0 +1,696 @@
+mapping:
+  # ==== Tier 1 — editor widgets, peeks, find/replace ====
+  # Esc collapses multiple cursors back to one. VSCode's default is a bare
+  # `textInputFocus`, which relies on internal priority; in a flat keymap that
+  # would shadow widget-Esc handlers, so we guard against every editor-overlay
+  # widget that also binds Esc (focus-based widgets — statusBar/breadcrumbs/
+  # lists/terminal — can't co-occur with editorTextFocus, so they need no guard).
+  - id: "removeSecondaryCursors"
+    binding:
+      - "escape"
+      - "shift+escape"
+    vscode:
+      action: "removeSecondaryCursors"
+      context: ["editorTextFocus && !suggestWidgetVisible && !parameterHintsVisible && !findWidgetVisible && !markersNavigationVisible && !referenceSearchVisible && !selectionAnchorSet && !standaloneColorPickerVisible && !callHierarchyVisible && !typeHierarchyVisible && !exceptionWidgetVisible && !dropWidgetVisible && !pasteWidgetVisible && !dirtyDiffVisible && !messageVisible && !inSnippetMode && !editorHasSelection && !codeActionMenuVisible && !renameInputVisible && !breakpointWidgetVisible && !testing.isPeekVisible && !testing.isInPeek"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.replaceOne#1"
+    binding:
+      - "ctrl+shift+1"
+    vscode:
+      action: "editor.action.replaceOne"
+      context: ["editorFocus && findWidgetVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.replaceOne#2"
+    binding:
+      - "enter"
+    vscode:
+      action: "editor.action.replaceOne"
+      context: ["editorFocus && findWidgetVisible && replaceInputFocussed"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.replaceAll"
+    binding:
+      - "ctrl+alt+enter"
+    vscode:
+      action: "editor.action.replaceAll"
+      context: ["editorFocus && findWidgetVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.selectAllMatches"
+    binding:
+      - "alt+enter"
+    vscode:
+      action: "editor.action.selectAllMatches"
+      context: ["editorFocus && findWidgetVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "breakpointWidget.action.acceptInput"
+    binding:
+      - "enter"
+    vscode:
+      action: "breakpointWidget.action.acceptInput"
+      context: ["breakpointWidgetVisible && inBreakpointWidget"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.closeCallHierarchy"
+    binding:
+      - "escape"
+    vscode:
+      action: "editor.closeCallHierarchy"
+      context: ["callHierarchyVisible && !config.editor.stablePeek"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.closeTypeHierarchy"
+    binding:
+      - "escape"
+    vscode:
+      action: "editor.closeTypeHierarchy"
+      context: ["typeHierarchyVisible && !config.editor.stablePeek"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.closeTestPeek"
+    binding:
+      - "escape"
+    vscode:
+      action: "editor.closeTestPeek"
+      context: ["testing.isInPeek && !config.editor.stablePeek || testing.isPeekVisible && !config.editor.stablePeek"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.debug.action.closeExceptionWidget"
+    binding:
+      - "escape"
+    vscode:
+      action: "editor.debug.action.closeExceptionWidget"
+      context: ["exceptionWidgetVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.hideDropWidget"
+    binding:
+      - "escape"
+    vscode:
+      action: "editor.hideDropWidget"
+      context: ["dropWidgetVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.hidePasteWidget"
+    binding:
+      - "escape"
+    vscode:
+      action: "editor.hidePasteWidget"
+      context: ["pasteWidgetVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.hideColorPicker"
+    binding:
+      - "escape"
+    vscode:
+      action: "editor.action.hideColorPicker"
+      context: ["standaloneColorPickerVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.insertColorWithStandaloneColorPicker"
+    binding:
+      - "enter"
+    vscode:
+      action: "editor.action.insertColorWithStandaloneColorPicker"
+      context: ["standaloneColorPickerFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "closeDirtyDiff"
+    binding:
+      - "escape"
+      - "shift+escape"
+    vscode:
+      action: "closeDirtyDiff"
+      context: ["dirtyDiffVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "leaveEditorMessage"
+    binding:
+      - "escape"
+    vscode:
+      action: "leaveEditorMessage"
+      context: ["messageVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  # ==== Tier 2 — hover, breadcrumbs, sticky scroll, rename suggestions, search inputs, explorer ====
+  - id: "editor.action.scrollUpHover"
+    binding:
+      - "up"
+    vscode:
+      action: "editor.action.scrollUpHover"
+      context: ["editorHoverFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.scrollDownHover"
+    binding:
+      - "down"
+    vscode:
+      action: "editor.action.scrollDownHover"
+      context: ["editorHoverFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.scrollLeftHover"
+    binding:
+      - "left"
+    vscode:
+      action: "editor.action.scrollLeftHover"
+      context: ["editorHoverFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.scrollRightHover"
+    binding:
+      - "right"
+    vscode:
+      action: "editor.action.scrollRightHover"
+      context: ["editorHoverFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.pageUpHover"
+    binding:
+      - "alt+up"
+      - "pageup"
+    vscode:
+      action: "editor.action.pageUpHover"
+      context: ["editorHoverFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.pageDownHover"
+    binding:
+      - "alt+down"
+      - "pagedown"
+    vscode:
+      action: "editor.action.pageDownHover"
+      context: ["editorHoverFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.goToTopHover"
+    binding:
+      - "ctrl+up"
+      - "home"
+    vscode:
+      action: "editor.action.goToTopHover"
+      context: ["editorHoverFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.goToBottomHover"
+    binding:
+      - "ctrl+down"
+      - "end"
+    vscode:
+      action: "editor.action.goToBottomHover"
+      context: ["editorHoverFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "breadcrumbs.focus"
+    binding:
+      - "ctrl+shift+[Semicolon]"
+    vscode:
+      action: "breadcrumbs.focus"
+      context: ["breadcrumbsPossible && breadcrumbsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "breadcrumbs.focusAndSelect"
+    binding:
+      - "ctrl+shift+[Period]"
+    vscode:
+      action: "breadcrumbs.focusAndSelect"
+      context: ["breadcrumbsPossible && breadcrumbsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "breadcrumbs.focusNext"
+    binding:
+      - "ctrl+right"
+      - "right"
+    vscode:
+      action: "breadcrumbs.focusNext"
+      context: ["breadcrumbsActive && breadcrumbsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "breadcrumbs.focusPrevious"
+    binding:
+      - "ctrl+left"
+      - "left"
+    vscode:
+      action: "breadcrumbs.focusPrevious"
+      context: ["breadcrumbsActive && breadcrumbsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "breadcrumbs.revealFocused"
+    binding:
+      - "ctrl+enter"
+      - "space"
+    vscode:
+      action: "breadcrumbs.revealFocused"
+      context: ["breadcrumbsActive && breadcrumbsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "breadcrumbs.selectEditor"
+    binding:
+      - "escape"
+    vscode:
+      action: "breadcrumbs.selectEditor"
+      context: ["breadcrumbsActive && breadcrumbsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "breadcrumbs.selectFocused"
+    binding:
+      - "down"
+      - "enter"
+    vscode:
+      action: "breadcrumbs.selectFocused"
+      context: ["breadcrumbsActive && breadcrumbsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.goToFocusedStickyScrollLine"
+    binding:
+      - "enter"
+    vscode:
+      action: "editor.action.goToFocusedStickyScrollLine"
+      context: ["stickyScrollFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.selectNextStickyScrollLine"
+    binding:
+      - "down"
+    vscode:
+      action: "editor.action.selectNextStickyScrollLine"
+      context: ["stickyScrollFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.selectPreviousStickyScrollLine"
+    binding:
+      - "up"
+    vscode:
+      action: "editor.action.selectPreviousStickyScrollLine"
+      context: ["stickyScrollFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.selectEditor"
+    binding:
+      - "escape"
+    vscode:
+      action: "editor.action.selectEditor"
+      context: ["stickyScrollFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "focusNextRenameSuggestion"
+    binding:
+      - "down"
+    vscode:
+      action: "focusNextRenameSuggestion"
+      context: ["renameInputVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "focusPreviousRenameSuggestion"
+    binding:
+      - "up"
+    vscode:
+      action: "focusPreviousRenameSuggestion"
+      context: ["renameInputVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "search.focus.nextInputBox"
+    binding:
+      - "ctrl+down"
+    vscode:
+      action: "search.focus.nextInputBox"
+      context: ["inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "search.focus.previousInputBox"
+    binding:
+      - "ctrl+up"
+    vscode:
+      action: "search.focus.previousInputBox"
+      context: ["inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "explorer.openToSide"
+    binding:
+      - "ctrl+enter"
+    vscode:
+      action: "explorer.openToSide"
+      context: ["explorerViewletFocus && foldersViewVisible && !inputFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  # ==== Tier 3 — status bar, banner, notifications, settings, icon picker, comments, webview find ====
+  - id: "workbench.statusBar.clearFocus"
+    binding:
+      - "escape"
+    vscode:
+      action: "workbench.statusBar.clearFocus"
+      context: ["statusBarFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "workbench.statusBar.focusFirst"
+    binding:
+      - "home"
+    vscode:
+      action: "workbench.statusBar.focusFirst"
+      context: ["statusBarFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "workbench.statusBar.focusLast"
+    binding:
+      - "end"
+    vscode:
+      action: "workbench.statusBar.focusLast"
+      context: ["statusBarFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "workbench.statusBar.focusNext"
+    binding:
+      - "down"
+      - "right"
+    vscode:
+      action: "workbench.statusBar.focusNext"
+      context: ["statusBarFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "workbench.statusBar.focusPrevious"
+    binding:
+      - "left"
+      - "up"
+    vscode:
+      action: "workbench.statusBar.focusPrevious"
+      context: ["statusBarFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "workbench.banner.focusBanner"
+    binding:
+      - "escape"
+    vscode:
+      action: "workbench.banner.focusBanner"
+      context: ["bannerFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "workbench.banner.focusNextAction"
+    binding:
+      - "down"
+      - "right"
+    vscode:
+      action: "workbench.banner.focusNextAction"
+      context: ["bannerFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "workbench.banner.focusPreviousAction"
+    binding:
+      - "left"
+      - "up"
+    vscode:
+      action: "workbench.banner.focusPreviousAction"
+      context: ["bannerFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "notifications.hideToasts"
+    binding:
+      - "escape"
+    vscode:
+      action: "notifications.hideToasts"
+      context: ["notificationToastsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "notifications.hideList"
+    binding:
+      - "escape"
+    vscode:
+      action: "notifications.hideList"
+      context: ["notificationCenterVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "notifications.focusFirstToast"
+    binding:
+      - "home"
+      - "pageup"
+    vscode:
+      action: "notifications.focusFirstToast"
+      context: ["notificationFocus && notificationToastsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "notifications.focusLastToast"
+    binding:
+      - "end"
+      - "pagedown"
+    vscode:
+      action: "notifications.focusLastToast"
+      context: ["notificationFocus && notificationToastsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "notifications.focusNextToast"
+    binding:
+      - "down"
+    vscode:
+      action: "notifications.focusNextToast"
+      context: ["notificationFocus && notificationToastsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "notifications.focusPreviousToast"
+    binding:
+      - "up"
+    vscode:
+      action: "notifications.focusPreviousToast"
+      context: ["notificationFocus && notificationToastsVisible"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "settings.action.focusSettingControl"
+    binding:
+      - "enter"
+    vscode:
+      action: "settings.action.focusSettingControl"
+      context: ["inSettingsEditor && settingRowFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "settings.action.focusSettingsList"
+    binding:
+      - "enter"
+    vscode:
+      action: "settings.action.focusSettingsList"
+      context: ["inSettingsEditor && settingsTocRowFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "settings.action.focusTOC"
+    binding:
+      - "left"
+    vscode:
+      action: "settings.action.focusTOC"
+      context: ["inSettingsEditor && settingRowFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "iconSelectBox.focusDown"
+    binding:
+      - "down"
+    vscode:
+      action: "iconSelectBox.focusDown"
+      context: ["iconSelectBoxFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "iconSelectBox.focusUp"
+    binding:
+      - "up"
+    vscode:
+      action: "iconSelectBox.focusUp"
+      context: ["iconSelectBoxFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "iconSelectBox.focusNext"
+    binding:
+      - "right"
+    vscode:
+      action: "iconSelectBox.focusNext"
+      context: ["iconSelectBoxFocus && iconSelectBoxInputEmpty || iconSelectBoxFocus && !iconSelectBoxInputFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "iconSelectBox.focusPrevious"
+    binding:
+      - "left"
+    vscode:
+      action: "iconSelectBox.focusPrevious"
+      context: ["iconSelectBoxFocus && iconSelectBoxInputEmpty || iconSelectBoxFocus && !iconSelectBoxInputFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "iconSelectBox.selectFocused"
+    binding:
+      - "enter"
+    vscode:
+      action: "iconSelectBox.selectFocused"
+      context: ["iconSelectBoxFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.submitComment"
+    binding:
+      - "ctrl+enter"
+    vscode:
+      action: "editor.action.submitComment"
+      context: ["commentEditorFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "workbench.action.hideComment"
+    binding:
+      - "escape"
+      - "shift+escape"
+    vscode:
+      action: "workbench.action.hideComment"
+      context: ["commentEditorFocused || commentFocused"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "commentsClearFilterText"
+    binding:
+      - "escape"
+    vscode:
+      action: "commentsClearFilterText"
+      context: ["commentsFilterFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "commentsFocusViewFromFilter"
+    binding:
+      - "ctrl+down"
+    vscode:
+      action: "commentsFocusViewFromFilter"
+      context: ["commentsFilterFocus"]
+    idea:
+      missing: true
+    zed:
+      missing: true
+  - id: "editor.action.webvieweditor.hideFind"
+    binding:
+      - "escape"
+    vscode:
+      action: "editor.action.webvieweditor.hideFind"
+      context: ["webviewFindWidgetVisible && !editorFocus && activeEditor == 'WebviewEditor'"]
+    idea:
+      missing: true
+    zed:
+      missing: true

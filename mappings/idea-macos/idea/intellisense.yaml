@@ -33,7 +33,8 @@ mapping:
     idea:
       action: "ImplementMethods"
     vscode:
-      missing: true
+      action: "editor.action.sourceAction"
+      context: ["editorTextFocus && !editorReadonly"]
     zed:
       missing: true
   - id: "OverrideMethods"
@@ -42,7 +43,8 @@ mapping:
     idea:
       action: "OverrideMethods"
     vscode:
-      missing: true
+      action: "editor.action.sourceAction"
+      context: ["editorTextFocus && !editorReadonly"]
     zed:
       missing: true
   - id: "SmartTypeCompletion"

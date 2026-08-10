@@ -67,7 +67,8 @@ mapping:
       context: ["Editor"]
   - id: "EditorTextStartWithSelection"
     binding:
-      - "ctrl+shift+[home]"
+      macos: "meta+shift+[home]"
+      default: "ctrl+shift+[home]"
     idea:
       action: "EditorTextStartWithSelection"
     vscode:
@@ -78,7 +79,8 @@ mapping:
       context: ["Editor"]
   - id: "EditorTextEndWithSelection"
     binding:
-      - "ctrl+shift+[end]"
+      macos: "meta+shift+[end]"
+      default: "ctrl+shift+[end]"
     idea:
       action: "EditorTextEndWithSelection"
     vscode:
@@ -126,6 +128,7 @@ mapping:
         - "ctrl+alt+shift+[KeyF]"
       default:
         - "alt+shift+[right]"
+        - "ctrl+alt+shift+[KeyF]"
     idea:
       action: "EditorNextWordWithSelection"
     vscode:
@@ -141,6 +144,7 @@ mapping:
         - "ctrl+alt+shift+[KeyB]"
       default:
         - "alt+shift+[left]"
+        - "ctrl+alt+shift+[KeyB]"
     idea:
       action: "EditorPreviousWordWithSelection"
     vscode:
@@ -171,7 +175,7 @@ mapping:
     idea:
       action: "EditorToggleColumnMode"
     vscode:
-      action: "editor.action.insertCursorAtEndOfEachLineSelected"
+      action: "editor.action.toggleColumnSelection"
       context: ["editorTextFocus"]
     zed:
       missing: true
@@ -207,7 +211,8 @@ mapping:
       action: "editor.action.addSelectionToNextFindMatch"
       context: ["editorFocus"]
     zed:
-      missing: true
+      action: "editor::SelectNext"
+      context: ["Editor"]
   - id: "UnselectPreviousOccurrence"
     binding:
       - "ctrl+shift+[KeyG]"
@@ -216,7 +221,8 @@ mapping:
     vscode:
       action: "cursorUndo"
     zed:
-      missing: true
+      action: "editor::UndoSelection"
+      context: ["Editor"]
   - id: "$SelectAll"
     binding:
       macos: "meta+[KeyA]"
@@ -230,9 +236,10 @@ mapping:
       context: ["Editor"]
   - id: "EditorCloneCaretAbove"
     binding:
-      - "ctrl+shift+[up]"
+      macos: "ctrl+shift+[up]"
+      default: "ctrl+[KeyK] ctrl+shift+[up]"
     idea:
-      action: "EditorCloneCaretAbove"
+      missing: true
     vscode:
       action: "editor.action.insertCursorAbove"
       context: ["editorTextFocus"]
@@ -241,9 +248,10 @@ mapping:
       context: ["Editor"]
   - id: "EditorCloneCaretBelow"
     binding:
-      - "ctrl+shift+[down]"
+      macos: "ctrl+shift+[down]"
+      default: "ctrl+[KeyK] ctrl+shift+[down]"
     idea:
-      action: "EditorCloneCaretBelow"
+      missing: true
     vscode:
       action: "editor.action.insertCursorBelow"
       context: ["editorTextFocus"]

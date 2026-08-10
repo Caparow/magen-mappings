@@ -102,7 +102,7 @@ Navigation: `[left]`, `[right]`, `[up]`, `[down]`, `[home]`, `[end]`, `[pageup]`
 
 Editing: `[enter]`, `[escape]`, `[tab]`, `[Backspace]`, `[delete]`, `[Space]`, `[Insert]`
 
-Symbols: `[Slash]`, `[Backslash]`, `[Period]`, `[Comma]`, `[Equal]`, `[Minus]`, `[Backquote]`, `[DIVIDE]`, `[MULTIPLY]`
+Symbols: `[Slash]`, `[Backslash]`, `[Period]`, `[Comma]`, `[Equals]`, `[Minus]`, `[BACK_QUOTE]`, `[DIVIDE]`, `[MULTIPLY]`
 
 Chord bindings (two-step): `"ctrl+[KeyK] ctrl+[KeyI]"`
 

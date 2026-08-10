@@ -8,7 +8,8 @@ mapping:
     vscode:
       action: "workbench.view.scm"
     zed:
-      missing: true
+      action: "git_panel::ToggleFocus"
+      context: ["Workspace"]
   - id: "ActivateDebugToolWindow"
     binding:
       macos: "meta+5"
@@ -18,7 +19,8 @@ mapping:
     vscode:
       action: "workbench.view.debug"
     zed:
-      missing: true
+      action: "debug_panel::ToggleFocus"
+      context: ["Workspace"]
   - id: "ActivateFindToolWindow"
     binding:
       macos: "meta+3"
@@ -28,7 +30,8 @@ mapping:
     vscode:
       action: "workbench.view.search"
     zed:
-      missing: true
+      action: "search::ToggleFocus"
+      context: ["Workspace"]
   - id: "ActivateProblemsViewToolWindow"
     binding:
       macos: "meta+6"
@@ -60,7 +63,8 @@ mapping:
     vscode:
       action: "workbench.action.output.toggleOutput"
     zed:
-      missing: true
+      action: "terminal_panel::ToggleFocus"
+      context: ["Workspace"]
   - id: "ActivateStructureToolWindow"
     binding:
       macos: "meta+7"
@@ -68,7 +72,7 @@ mapping:
     idea:
       action: "ActivateStructureToolWindow"
     vscode:
-      missing: true
+      action: "outline.focus"
     zed:
       action: "outline_panel::ToggleFocus"
       context: ["Workspace"]
@@ -81,7 +85,8 @@ mapping:
     vscode:
       action: "workbench.view.scm"
     zed:
-      missing: true
+      action: "git_panel::ToggleFocus"
+      context: ["Workspace"]
   - id: "EditorDecreaseFontSizeGlobal"
     binding:
       - "ctrl+shift+[Comma]"
@@ -136,7 +141,7 @@ mapping:
       context: ["Workspace"]
   - id: "ZoomInIdeAction"
     binding:
-      - "ctrl+alt+[Equal]"
+      - "ctrl+alt+[Equals]"
     idea:
       action: "ZoomInIdeAction"
     vscode:
@@ -176,16 +181,16 @@ mapping:
     zed:
       action: "workspace::NewTerminal"
       context: ["Terminal"]
-  - id: "HideSideWindows"
+  - id: "HideAllWindows"
     binding:
       macos: "meta+shift+[F12]"
       default: "ctrl+shift+[F12]"
     idea:
-      action: "HideSideWindows"
+      missing: true
     vscode:
-      action: "workbench.action.toggleSidebarVisibility"
+      action: "workbench.action.toggleZenMode"
     zed:
-      action: "workspace::ToggleLeftDock"
+      action: "workspace::ToggleAllDocks"
       context: ["Workspace"]
   - id: "EditorToggleUseSoftWraps"
     binding:
@@ -200,8 +205,8 @@ mapping:
       context: ["Editor"]
   - id: "SplitVertically"
     binding:
-      macos: "meta+shift+[KeyV]"
-      default: "ctrl+shift+[KeyV]"
+      macos: "meta+[Backslash]"
+      default: "ctrl+[Backslash]"
     idea:
       action: "SplitVertically"
     vscode:

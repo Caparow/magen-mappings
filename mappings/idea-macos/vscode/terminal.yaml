@@ -528,19 +528,6 @@ mapping:
       missing: true
     zed:
       missing: true
-  - id: "terminal.pasteDefault"
-    binding:
-      - "ctrl+shift+[KeyV]"
-    vscode:
-      action: "workbench.action.terminal.paste"
-      context:
-        [
-          "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported",
-        ]
-    idea:
-      missing: true
-    zed:
-      missing: true
   - id: "terminal.pasteSelection"
     binding:
       - "shift+[Insert]"
@@ -756,11 +743,11 @@ mapping:
       missing: true
     zed:
       missing: true
-  - id: "terminal.requestCompletions"
+  - id: "terminal.triggerSuggest"
     binding:
       - "ctrl+[Space]"
     vscode:
-      action: "workbench.action.terminal.requestCompletions"
+      action: "workbench.action.terminal.triggerSuggest"
       context:
         [
           "config.terminal.integrated.suggest.enabled && terminalFocus && terminalProcessSupported && terminalShellIntegrationEnabled",

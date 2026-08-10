@@ -6,6 +6,7 @@ mapping:
         - "ctrl+[KeyN]"
       default:
         - "[down]"
+        - "ctrl+[KeyN]"
     idea:
       action: "EditorDown"
     vscode:
@@ -36,6 +37,8 @@ mapping:
         - "[end]"
         - "ctrl+[KeyE]"
       default:
+        - "ctrl+[right]"
+        - "ctrl+[KeyE]"
         - "[end]"
     idea:
       action: "EditorLineEnd"
@@ -52,6 +55,7 @@ mapping:
         - "[home]"
         - "ctrl+[KeyA]"
       default:
+        - "ctrl+[left]"
         - "[home]"
     idea:
       action: "EditorLineStart"
@@ -79,6 +83,7 @@ mapping:
         - "ctrl+alt+[KeyF]"
       default:
         - "alt+[right]"
+        - "ctrl+alt+[KeyF]"
     idea:
       action: "EditorNextWord"
     vscode:

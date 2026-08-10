@@ -1,4 +1,14 @@
 mapping:
+  - id: "OptimizeImports.idea-native"
+    binding:
+      macos: "ctrl+alt+[KeyO]"
+      default: "ctrl+alt+[KeyO]"
+    idea:
+      action: "OptimizeImports"
+    vscode:
+      missing: true
+    zed:
+      missing: true
   - id: "ToggleRenderedDocPresentation"
     binding:
       - "ctrl+alt+[KeyQ]"

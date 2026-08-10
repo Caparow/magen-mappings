@@ -6,7 +6,7 @@ mapping:
       action: 'openReferenceToSide'
       context: [ "listFocus && referenceSearchVisible && !inputFocus && !treeElementCanCollapse && !treeElementCanExpand && !treestickyScrollFocused" ]
     idea:
-      action: 'OpenInRightSplit'
+      missing: true
   - id: "refactorPreview.toggleCheckedState"
     binding:
       - "space"

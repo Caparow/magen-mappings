@@ -228,16 +228,6 @@ mapping:
       missing: true
     zed:
       missing: true
-  - id: "ServiceView.ShowServices"
-    binding:
-      macos: "shift+meta+[KeyT]"
-      default: "shift+ctrl+[KeyT]"
-    idea:
-      action: "ServiceView.ShowServices"
-    vscode:
-      missing: true
-    zed:
-      missing: true
   - id: "ShowContent"
     binding:
       - "ctrl+shift+[down]"
@@ -385,8 +375,8 @@ mapping:
       missing: true
   - id: "ZoomCurrentWindow"
     binding:
-      macos: "meta+ctrl+[Equal]"
-      default: "alt+ctrl+[Equal]"
+      macos: "meta+ctrl+[Equals]"
+      default: "alt+ctrl+[Equals]"
     idea:
       action: "ZoomCurrentWindow"
     vscode:

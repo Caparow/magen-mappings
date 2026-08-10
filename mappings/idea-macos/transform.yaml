@@ -2,8 +2,9 @@ mapping:
   - id: "OptimizeImports"
     binding:
       macos: "ctrl+alt+[KeyO]"
+      default: "alt+shift+[KeyO]"
     idea:
-      action: "OptimizeImports"
+      missing: true
     vscode:
       action: "editor.action.organizeImports"
     zed:

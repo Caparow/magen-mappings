@@ -51,16 +51,19 @@ mapping:
     vscode:
       action: "workbench.action.debug.restart"
     zed:
-      missing: true
+      action: "debugger::Rerun"
+      context: ["Workspace"]
   - id: "Run"
     binding:
       macos: "ctrl+[KeyR]"
+      default: "shift+[F10]"
     idea:
       action: "Run"
     vscode:
       action: "workbench.action.debug.run"
     zed:
-      missing: true
+      action: "debugger::Start"
+      context: ["Workspace"]
   - id: "SaveAll"
     binding:
       macos: "meta+[KeyS]"
@@ -68,9 +71,9 @@ mapping:
     idea:
       action: "SaveAll"
     vscode:
-      action: "workbench.action.files.save"
+      action: "workbench.action.files.saveAll"
     zed:
-      action: "workspace::Save"
+      action: "workspace::SaveAll"
       context: ["Workspace"]
   - id: "SaveAllFiles"
     binding:

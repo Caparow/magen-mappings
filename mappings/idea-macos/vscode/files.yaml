@@ -79,7 +79,14 @@ mapping:
       missing: true
   - id: "moveFileToTrash"
     binding:
-      - "delete"
+      macos:
+        - "delete"
+        - "backspace"
+        - "meta+[Backspace]"
+      default:
+        - "delete"
+        - "backspace"
+        - "ctrl+[Backspace]"
     vscode:
       action: 'moveFileToTrash'
       context: [ "explorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus" ]
@@ -115,5 +122,3 @@ mapping:
       context: ["ProjectPanel && not_editing"]
     idea:
       missing: true
-
-  

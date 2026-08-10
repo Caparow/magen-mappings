@@ -146,17 +146,6 @@ mapping:
       missing: true
     zed:
       missing: true
-  - id: "closeDirtyDiff"
-    binding:
-      - "escape"
-      - "shift+escape"
-    vscode:
-      action: "closeDirtyDiff"
-      context: ["dirtyDiffVisible"]
-    idea:
-      missing: true
-    zed:
-      missing: true
   - id: "leaveEditorMessage"
     binding:
       - "escape"

@@ -1,8 +1,12 @@
 mapping:
   - id: "editor.action.clipboardCopyAction"
     binding:
-      macos: "meta+[KeyC]"
-      default: "ctrl+[KeyC]"
+      macos:
+        - "meta+[KeyC]"
+        - "meta+[INSERT]"
+      default:
+        - "ctrl+[KeyC]"
+        - "ctrl+[INSERT]"
     idea:
       action: "$Copy"
     vscode:
@@ -12,8 +16,12 @@ mapping:
       context: ["Editor"]
   - id: "editor.action.clipboardCutAction"
     binding:
-      macos: "meta+[KeyX]"
-      default: "ctrl+[KeyX]"
+      macos:
+        - "meta+[KeyX]"
+        - "shift+[delete]"
+      default:
+        - "ctrl+[KeyX]"
+        - "shift+[delete]"
     idea:
       action: "$Cut"
     vscode:
@@ -23,12 +31,28 @@ mapping:
       context: ["Editor"]
   - id: "editor.action.clipboardPasteAction"
     binding:
-      macos: "meta+[KeyV]"
-      default: "ctrl+[KeyV]"
+      macos:
+        - "meta+[KeyV]"
+        - "shift+[INSERT]"
+      default:
+        - "ctrl+[KeyV]"
+        - "shift+[INSERT]"
     idea:
       action: "$Paste"
     vscode:
       action: "editor.action.clipboardPasteAction"
+    zed:
+      action: "editor::Paste"
+      context: ["Editor"]
+  - id: "editor.action.pasteAsText"
+    binding:
+      macos: "meta+shift+[KeyV]"
+      default: "ctrl+shift+[KeyV]"
+    idea:
+      action: "EditorPasteSimple"
+    vscode:
+      action: "editor.action.pasteAsText"
+      context: ["editorTextFocus && !editorReadonly"]
     zed:
       action: "editor::Paste"
       context: ["Editor"]
@@ -60,8 +84,12 @@ mapping:
       context: ["Terminal"]
   - id: "workbench.action.terminal.paste"
     binding:
-      macos: "meta+[KeyV]"
-      default: "ctrl+[KeyV]"
+      macos:
+        - "meta+[KeyV]"
+        - "ctrl+shift+[KeyV]"
+      default:
+        - "ctrl+[KeyV]"
+        - "ctrl+shift+[KeyV]"
     idea:
       action: "Terminal.Paste"
     vscode:

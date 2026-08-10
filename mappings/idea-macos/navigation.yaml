@@ -66,8 +66,6 @@ mapping:
       default: "ctrl+[KeyB]"
     idea:
       action: "GotoDeclaration"
-      mouse:
-        - "meta button1"
     vscode:
       action: "editor.action.goToDeclaration"
     zed:
@@ -104,7 +102,8 @@ mapping:
       action: "editor.action.wordHighlight.next"
       context: ["editorTextFocus"]
     zed:
-      missing: true
+      action: "editor::GoToNextReference"
+      context: ["Editor"]
   - id: "GotoPrevElementUnderCaretUsage"
     binding:
       - "ctrl+alt+[up]"
@@ -114,7 +113,8 @@ mapping:
       action: "editor.action.wordHighlight.prev"
       context: ["editorTextFocus"]
     zed:
-      missing: true
+      action: "editor::GoToPreviousReference"
+      context: ["Editor"]
   - id: "GotoNextError"
     binding:
       - "[F2]"
@@ -158,8 +158,6 @@ mapping:
         - "ctrl+shift+[KeyB]"
     idea:
       action: "GotoTypeDeclaration"
-      mouse:
-        - "meta shift button1"
     vscode:
       action: "editor.action.goToTypeDefinition"
     zed:
@@ -226,10 +224,10 @@ mapping:
     idea:
       action: "QuickImplementations"
     vscode:
-      action: "editor.action.peekDefinition"
+      action: "editor.action.peekImplementation"
       context: ["editorTextFocus"]
     zed:
-      action: "editor::GoToDefinition"
+      action: "editor::GoToImplementation"
       context: ["Editor"]
   - id: "QuickJavaDoc"
     binding:
@@ -269,8 +267,6 @@ mapping:
       default: "ctrl+alt+[KeyB]"
     idea:
       action: "GotoImplementation"
-      mouse:
-        - "meta alt button1"
     vscode:
       action: "editor.action.goToImplementation"
       context: ["editorHasImplementationProvider && editorTextFocus"]

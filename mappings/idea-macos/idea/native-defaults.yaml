@@ -1,0 +1,4531 @@
+# IntelliJ IDEA 2026.2 native macOS keyboard and mouse keymap snapshot.
+# Source: the bundled `$default` keymap plus `Mac OS X 10.5+` overrides.
+# Keep the baseline complete: IDEA negations clear inherited actions before applying additive tweaks.
+mapping:
+  - id: "idea.native.$Copy"
+    binding:
+      macos:
+        - "meta+[KeyC]"
+        - "meta+[INSERT]"
+      default:
+        - "ctrl+[KeyC]"
+        - "ctrl+[INSERT]"
+    idea:
+      action: "$Copy"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.$Cut"
+    binding:
+      macos:
+        - "meta+[KeyX]"
+        - "shift+[delete]"
+      default:
+        - "ctrl+[KeyX]"
+        - "shift+[delete]"
+    idea:
+      action: "$Cut"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.$Delete"
+    binding:
+      macos:
+        - "[delete]"
+        - "[Backspace]"
+        - "meta+[Backspace]"
+      default:
+        - "[delete]"
+        - "[Backspace]"
+        - "ctrl+[Backspace]"
+    idea:
+      action: "$Delete"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.$Paste"
+    binding:
+      macos:
+        - "meta+[KeyV]"
+        - "shift+[INSERT]"
+      default:
+        - "ctrl+[KeyV]"
+        - "shift+[INSERT]"
+    idea:
+      action: "$Paste"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.$Redo"
+    binding:
+      macos:
+        - "meta+shift+[KeyZ]"
+        - "alt+shift+[Backspace]"
+      default:
+        - "ctrl+shift+[KeyZ]"
+        - "alt+shift+[Backspace]"
+    idea:
+      action: "$Redo"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.$SelectAll"
+    binding:
+      macos:
+        - "meta+[KeyA]"
+      default:
+        - "ctrl+[KeyA]"
+    idea:
+      action: "$SelectAll"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.$Undo"
+    binding:
+      macos:
+        - "meta+[KeyZ]"
+      default:
+        - "ctrl+[KeyZ]"
+    idea:
+      action: "$Undo"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateBookmarksToolWindow"
+    binding:
+      macos:
+        - "meta+2"
+      default:
+        - "ctrl+2"
+    idea:
+      action: "ActivateBookmarksToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateCommitToolWindow"
+    binding:
+      macos:
+        - "meta+0"
+      default:
+        - "ctrl+0"
+    idea:
+      action: "ActivateCommitToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateDebugToolWindow"
+    binding:
+      macos:
+        - "meta+5"
+      default:
+        - "ctrl+5"
+    idea:
+      action: "ActivateDebugToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateFindToolWindow"
+    binding:
+      macos:
+        - "meta+3"
+      default:
+        - "ctrl+3"
+    idea:
+      action: "ActivateFindToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateNuGetToolWindow"
+    binding:
+      macos:
+        - "meta+alt+7"
+      default:
+        - "ctrl+alt+7"
+    idea:
+      action: "ActivateNuGetToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateProblemsViewToolWindow"
+    binding:
+      macos:
+        - "meta+6"
+      default:
+        - "ctrl+6"
+    idea:
+      action: "ActivateProblemsViewToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateProjectToolWindow"
+    binding:
+      macos:
+        - "meta+1"
+      default:
+        - "ctrl+1"
+    idea:
+      action: "ActivateProjectToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateRunToolWindow"
+    binding:
+      macos:
+        - "meta+4"
+      default:
+        - "ctrl+4"
+    idea:
+      action: "ActivateRunToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateServicesToolWindow"
+    binding:
+      macos:
+        - "meta+8"
+      default:
+        - "ctrl+8"
+    idea:
+      action: "ActivateServicesToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateStructureToolWindow"
+    binding:
+      macos:
+        - "meta+7"
+      default:
+        - "ctrl+7"
+    idea:
+      action: "ActivateStructureToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateTerminalToolWindow"
+    binding:
+      - "alt+[F12]"
+    idea:
+      action: "ActivateTerminalToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateUnitTestsToolWindow"
+    binding:
+      macos:
+        - "meta+alt+8"
+      default:
+        - "ctrl+alt+8"
+    idea:
+      action: "ActivateUnitTestsToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ActivateVersionControlToolWindow"
+    binding:
+      macos:
+        - "meta+9"
+      default:
+        - "ctrl+9"
+    idea:
+      action: "ActivateVersionControlToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.AutoIndentLines"
+    binding:
+      - "ctrl+alt+[KeyI]"
+    idea:
+      action: "AutoIndentLines"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Back"
+    binding:
+      macos:
+        - "meta+[BracketLeft]"
+        - "meta+alt+[left]"
+      default:
+        - "ctrl+[BracketLeft]"
+        - "ctrl+alt+[left]"
+    idea:
+      action: "Back"
+      mouse:
+        - "button4"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.BraceOrQuoteOut"
+    binding:
+      - "[tab]"
+    idea:
+      action: "BraceOrQuoteOut"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CallHierarchy"
+    binding:
+      - "ctrl+alt+[KeyH]"
+    idea:
+      action: "CallHierarchy"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChangeSignature"
+    binding:
+      macos:
+        - "meta+[F6]"
+      default:
+        - "ctrl+[F6]"
+    idea:
+      action: "ChangeSignature"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChangeTypeSignature"
+    binding:
+      macos:
+        - "meta+shift+[F6]"
+      default:
+        - "ctrl+shift+[F6]"
+    idea:
+      action: "ChangeTypeSignature"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChangesView.GroupBy.Directory"
+    binding:
+      - "ctrl+[KeyP]"
+    idea:
+      action: "ChangesView.GroupBy.Directory"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChangesView.GroupBy.Module"
+    binding:
+      - "ctrl+[KeyM]"
+    idea:
+      action: "ChangesView.GroupBy.Module"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChangesView.Move"
+    binding:
+      macos:
+        - "meta+shift+[KeyM]"
+      default:
+        - "ctrl+shift+[KeyM]"
+    idea:
+      action: "ChangesView.Move"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChangesView.Rename"
+    binding:
+      - "[F2]"
+      - "shift+[F6]"
+    idea:
+      action: "ChangesView.Rename"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChangesView.Revert"
+    binding:
+      macos:
+        - "meta+alt+[KeyZ]"
+      default:
+        - "ctrl+alt+[KeyZ]"
+    idea:
+      action: "ChangesView.Revert"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChangesView.SetDefault"
+    binding:
+      - "ctrl+[space]"
+    idea:
+      action: "ChangesView.SetDefault"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChangesView.ShowCommitOptions"
+    binding:
+      - "ctrl+[KeyO]"
+    idea:
+      action: "ChangesView.ShowCommitOptions"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChooseDebugConfiguration"
+    binding:
+      - "ctrl+alt+[KeyD]"
+    idea:
+      action: "ChooseDebugConfiguration"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ChooseRunConfiguration"
+    binding:
+      - "ctrl+alt+[KeyR]"
+    idea:
+      action: "ChooseRunConfiguration"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ClassNameCompletion"
+    binding:
+      - "ctrl+alt+[space]"
+    idea:
+      action: "ClassNameCompletion"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CloseActiveTab"
+    binding:
+      - "ctrl+shift+[F4]"
+    idea:
+      action: "CloseActiveTab"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CloseContent"
+    binding:
+      macos:
+        - "meta+[KeyW]"
+      default:
+        - "ctrl+[KeyW]"
+    idea:
+      action: "CloseContent"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CloseGotItTooltip"
+    binding:
+      - "[escape]"
+    idea:
+      action: "CloseGotItTooltip"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CodeCompletion"
+    binding:
+      - "ctrl+[space]"
+    idea:
+      action: "CodeCompletion"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CodeFloatingToolbar.GotoNextMenu"
+    binding:
+      - "[tab]"
+    idea:
+      action: "CodeFloatingToolbar.GotoNextMenu"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CodeFloatingToolbar.GotoPrevMenu"
+    binding:
+      - "shift+[tab]"
+    idea:
+      action: "CodeFloatingToolbar.GotoPrevMenu"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CodeInspection.OnEditor"
+    binding:
+      - "alt+shift+[KeyI]"
+    idea:
+      action: "CodeInspection.OnEditor"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CollapseAll"
+    binding:
+      macos:
+        - "meta+[SUBTRACT]"
+        - "meta+[Minus]"
+      default:
+        - "ctrl+[SUBTRACT]"
+        - "ctrl+[Minus]"
+    idea:
+      action: "CollapseAll"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CollapseAllRegions"
+    binding:
+      macos:
+        - "meta+shift+[SUBTRACT]"
+        - "meta+shift+[Minus]"
+      default:
+        - "ctrl+shift+[SUBTRACT]"
+        - "ctrl+shift+[Minus]"
+    idea:
+      action: "CollapseAllRegions"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CollapseBlock"
+    binding:
+      macos:
+        - "meta+shift+[Period]"
+      default:
+        - "ctrl+shift+[Period]"
+    idea:
+      action: "CollapseBlock"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CollapseExpandableComponent"
+    binding:
+      macos:
+        - "shift+[enter]"
+        - "meta+[SUBTRACT]"
+        - "meta+[Minus]"
+      default:
+        - "shift+[enter]"
+        - "ctrl+[SUBTRACT]"
+        - "ctrl+[Minus]"
+    idea:
+      action: "CollapseExpandableComponent"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CollapseRegion"
+    binding:
+      macos:
+        - "meta+[SUBTRACT]"
+        - "meta+[Minus]"
+      default:
+        - "ctrl+[SUBTRACT]"
+        - "ctrl+[Minus]"
+    idea:
+      action: "CollapseRegion"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CollapseRegionRecursively"
+    binding:
+      macos:
+        - "meta+alt+[SUBTRACT]"
+        - "meta+alt+[Minus]"
+      default:
+        - "ctrl+alt+[SUBTRACT]"
+        - "ctrl+alt+[Minus]"
+    idea:
+      action: "CollapseRegionRecursively"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CollapseSelection"
+    binding:
+      macos:
+        - "meta+[Period]"
+      default:
+        - "ctrl+[Period]"
+    idea:
+      action: "CollapseSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CollapseTreeNode"
+    binding:
+      - "[SUBTRACT]"
+    idea:
+      action: "CollapseTreeNode"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CommentByBlockComment"
+    binding:
+      macos:
+        - "meta+alt+[Slash]"
+        - "ctrl+shift+[Slash]"
+        - "meta+shift+[Slash]"
+      default:
+        - "ctrl+alt+[Slash]"
+        - "ctrl+shift+[Slash]"
+        - "ctrl+shift+[Slash]"
+    idea:
+      action: "CommentByBlockComment"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CommentByLineComment"
+    binding:
+      macos:
+        - "meta+[Slash]"
+        - "meta+[DIVIDE]"
+      default:
+        - "ctrl+[Slash]"
+        - "ctrl+[DIVIDE]"
+    idea:
+      action: "CommentByLineComment"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Compare.SameVersion"
+    binding:
+      macos:
+        - "meta+[KeyD]"
+      default:
+        - "ctrl+[KeyD]"
+    idea:
+      action: "Compare.SameVersion"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CompareTwoFiles"
+    binding:
+      macos:
+        - "meta+[KeyD]"
+      default:
+        - "ctrl+[KeyD]"
+    idea:
+      action: "CompareTwoFiles"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Compile"
+    binding:
+      macos:
+        - "meta+shift+[F9]"
+      default:
+        - "ctrl+shift+[F9]"
+    idea:
+      action: "Compile"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CompileDirty"
+    binding:
+      macos:
+        - "meta+[F9]"
+      default:
+        - "ctrl+[F9]"
+    idea:
+      action: "CompileDirty"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Console.Execute"
+    binding:
+      - "[enter]"
+    idea:
+      action: "Console.Execute"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Console.Execute.Multiline"
+    binding:
+      macos:
+        - "meta+[enter]"
+      default:
+        - "ctrl+[enter]"
+    idea:
+      action: "Console.Execute.Multiline"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Console.History.Browse"
+    binding:
+      macos:
+        - "meta+alt+[KeyE]"
+      default:
+        - "ctrl+alt+[KeyE]"
+    idea:
+      action: "Console.History.Browse"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Console.Open"
+    binding:
+      macos:
+        - "meta+shift+[F10]"
+      default:
+        - "ctrl+shift+[F10]"
+    idea:
+      action: "Console.Open"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ContextHelp"
+    binding:
+      macos:
+        - "meta+shift+[F1]"
+      default:
+        - "ctrl+shift+[F1]"
+    idea:
+      action: "ContextHelp"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CopyElement"
+    binding:
+      - "[F5]"
+    idea:
+      action: "CopyElement"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CopyPaths"
+    binding:
+      macos:
+        - "meta+shift+[KeyC]"
+      default:
+        - "ctrl+shift+[KeyC]"
+    idea:
+      action: "CopyPaths"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.CopyReference"
+    binding:
+      macos:
+        - "meta+alt+shift+[KeyC]"
+      default:
+        - "ctrl+alt+shift+[KeyC]"
+    idea:
+      action: "CopyReference"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Debug"
+    binding:
+      - "ctrl+[KeyD]"
+    idea:
+      action: "Debug"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.DebugClass"
+    binding:
+      - "ctrl+shift+[KeyD]"
+    idea:
+      action: "DebugClass"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Diff.ApplyLeftSide"
+    binding:
+      macos:
+        - "ctrl+meta+[right]"
+      default:
+        - "ctrl+alt+[right]"
+    idea:
+      action: "Diff.ApplyLeftSide"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Diff.ApplyRightSide"
+    binding:
+      macos:
+        - "ctrl+meta+[left]"
+      default:
+        - "ctrl+alt+[left]"
+    idea:
+      action: "Diff.ApplyRightSide"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Diff.FocusOppositePane"
+    binding:
+      - "ctrl+shift+[tab]"
+    idea:
+      action: "Diff.FocusOppositePane"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Diff.NextChange"
+    binding:
+      - "ctrl+shift+[right]"
+    idea:
+      action: "Diff.NextChange"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Diff.PrevChange"
+    binding:
+      - "ctrl+shift+[left]"
+    idea:
+      action: "Diff.PrevChange"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Diff.ShowDiff"
+    binding:
+      macos:
+        - "meta+[KeyD]"
+      default:
+        - "ctrl+[KeyD]"
+    idea:
+      action: "Diff.ShowDiff"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Diff.ShowSettingsPopup"
+    binding:
+      macos:
+        - "meta+shift+[KeyD]"
+      default:
+        - "ctrl+shift+[KeyD]"
+    idea:
+      action: "Diff.ShowSettingsPopup"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.DirDiffMenu.SynchronizeDiff"
+    binding:
+      - "[enter]"
+    idea:
+      action: "DirDiffMenu.SynchronizeDiff"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.DirDiffMenu.SynchronizeDiff.All"
+    binding:
+      macos:
+        - "meta+[enter]"
+      default:
+        - "ctrl+[enter]"
+    idea:
+      action: "DirDiffMenu.SynchronizeDiff.All"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.DumpLookupElementWeights"
+    binding:
+      macos:
+        - "meta+alt+shift+[KeyW]"
+      default:
+        - "ctrl+alt+shift+[KeyW]"
+    idea:
+      action: "DumpLookupElementWeights"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.DuplicatesForm.SendToLeft"
+    binding:
+      macos:
+        - "meta+1"
+      default:
+        - "ctrl+1"
+    idea:
+      action: "DuplicatesForm.SendToLeft"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.DuplicatesForm.SendToRight"
+    binding:
+      macos:
+        - "meta+2"
+      default:
+        - "ctrl+2"
+    idea:
+      action: "DuplicatesForm.SendToRight"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditBreakpoint"
+    binding:
+      macos:
+        - "meta+shift+[F8]"
+      default:
+        - "ctrl+shift+[F8]"
+    idea:
+      action: "EditBreakpoint"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditSource"
+    binding:
+      macos:
+        - "meta+[down]"
+        - "[F4]"
+      default:
+        - "ctrl+[down]"
+        - "[F4]"
+    idea:
+      action: "EditSource"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditSourceInNewWindow"
+    binding:
+      - "shift+[F4]"
+    idea:
+      action: "EditSourceInNewWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorAddCaretPerSelectedLine"
+    binding:
+      - "shift+alt+[KeyG]"
+    idea:
+      action: "EditorAddCaretPerSelectedLine"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorAddOrRemoveCaret"
+    binding: []
+    idea:
+      action: "EditorAddOrRemoveCaret"
+      mouse:
+        - "alt shift button1"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorAddRectangularSelectionOnMouseDrag"
+    binding: []
+    idea:
+      action: "EditorAddRectangularSelectionOnMouseDrag"
+      mouse:
+        - "meta alt shift button1"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorBackSpace"
+    binding:
+      - "[Backspace]"
+      - "shift+[Backspace]"
+    idea:
+      action: "EditorBackSpace"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorChooseLookupItem"
+    binding:
+      - "[enter]"
+    idea:
+      action: "EditorChooseLookupItem"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorChooseLookupItemDot"
+    binding:
+      - "ctrl+[Period]"
+    idea:
+      action: "EditorChooseLookupItemDot"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorChooseLookupItemReplace"
+    binding:
+      - "[tab]"
+    idea:
+      action: "EditorChooseLookupItemReplace"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorCodeBlockEnd"
+    binding:
+      macos:
+        - "meta+alt+[BracketRight]"
+      default:
+        - "ctrl+alt+[BracketRight]"
+    idea:
+      action: "EditorCodeBlockEnd"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorCodeBlockEndWithSelection"
+    binding:
+      macos:
+        - "meta+alt+shift+[BracketRight]"
+      default:
+        - "ctrl+alt+shift+[BracketRight]"
+    idea:
+      action: "EditorCodeBlockEndWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorCodeBlockStart"
+    binding:
+      macos:
+        - "meta+alt+[BracketLeft]"
+      default:
+        - "ctrl+alt+[BracketLeft]"
+    idea:
+      action: "EditorCodeBlockStart"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorCodeBlockStartWithSelection"
+    binding:
+      macos:
+        - "meta+alt+shift+[BracketLeft]"
+      default:
+        - "ctrl+alt+shift+[BracketLeft]"
+    idea:
+      action: "EditorCodeBlockStartWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorCompleteStatement"
+    binding:
+      macos:
+        - "meta+shift+[enter]"
+      default:
+        - "ctrl+shift+[enter]"
+    idea:
+      action: "EditorCompleteStatement"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorContextInfo"
+    binding:
+      - "ctrl+shift+[KeyQ]"
+    idea:
+      action: "EditorContextInfo"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorCreateRectangularSelection"
+    binding: []
+    idea:
+      action: "EditorCreateRectangularSelection"
+      mouse:
+        - "alt shift button2"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorCreateRectangularSelectionOnMouseDrag"
+    binding: []
+    idea:
+      action: "EditorCreateRectangularSelectionOnMouseDrag"
+      mouse:
+        - "alt button1"
+        - "button2"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorCutLineEnd"
+    binding:
+      - "ctrl+[KeyK]"
+    idea:
+      action: "EditorCutLineEnd"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorDecreaseFontSizeGlobal"
+    binding:
+      - "ctrl+shift+[Comma]"
+    idea:
+      action: "EditorDecreaseFontSizeGlobal"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorDelete"
+    binding:
+      - "[delete]"
+    idea:
+      action: "EditorDelete"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorDeleteLine"
+    binding:
+      macos:
+        - "meta+[Backspace]"
+      default:
+        - "ctrl+[Backspace]"
+    idea:
+      action: "EditorDeleteLine"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorDeleteToWordEnd"
+    binding:
+      - "alt+[delete]"
+    idea:
+      action: "EditorDeleteToWordEnd"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorDeleteToWordStart"
+    binding:
+      - "alt+[Backspace]"
+    idea:
+      action: "EditorDeleteToWordStart"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorDown"
+    binding:
+      - "[down]"
+      - "ctrl+[KeyN]"
+    idea:
+      action: "EditorDown"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorDownWithSelection"
+    binding:
+      - "shift+[down]"
+    idea:
+      action: "EditorDownWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorDuplicate"
+    binding:
+      macos:
+        - "meta+[KeyD]"
+      default:
+        - "ctrl+[KeyD]"
+    idea:
+      action: "EditorDuplicate"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorEnter"
+    binding:
+      - "[enter]"
+    idea:
+      action: "EditorEnter"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorEscape"
+    binding:
+      - "[escape]"
+    idea:
+      action: "EditorEscape"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorFocusGutter"
+    binding:
+      - "alt+shift+6 [KeyF]"
+    idea:
+      action: "EditorFocusGutter"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorIncreaseFontSizeGlobal"
+    binding:
+      - "ctrl+shift+[Period]"
+    idea:
+      action: "EditorIncreaseFontSizeGlobal"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorIndentSelection"
+    binding:
+      - "[tab]"
+    idea:
+      action: "EditorIndentSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorJoinLines"
+    binding:
+      - "ctrl+shift+[KeyJ]"
+    idea:
+      action: "EditorJoinLines"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorLeft"
+    binding:
+      - "[left]"
+      - "ctrl+[KeyB]"
+    idea:
+      action: "EditorLeft"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorLeftWithSelection"
+    binding:
+      - "shift+[left]"
+    idea:
+      action: "EditorLeftWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorLineEnd"
+    binding:
+      macos:
+        - "meta+[right]"
+        - "ctrl+[KeyE]"
+        - "[end]"
+      default:
+        - "ctrl+[right]"
+        - "ctrl+[KeyE]"
+        - "[end]"
+    idea:
+      action: "EditorLineEnd"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorLineEndWithSelection"
+    binding:
+      macos:
+        - "meta+shift+[right]"
+        - "shift+[end]"
+      default:
+        - "ctrl+shift+[right]"
+        - "shift+[end]"
+    idea:
+      action: "EditorLineEndWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorLineStart"
+    binding:
+      macos:
+        - "meta+[left]"
+        - "ctrl+[KeyA]"
+        - "[home]"
+      default:
+        - "ctrl+[left]"
+        - "ctrl+[KeyA]"
+        - "[home]"
+    idea:
+      action: "EditorLineStart"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorLineStartWithSelection"
+    binding:
+      macos:
+        - "meta+shift+[left]"
+        - "shift+[home]"
+      default:
+        - "ctrl+shift+[left]"
+        - "shift+[home]"
+    idea:
+      action: "EditorLineStartWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorMatchBrace"
+    binding:
+      - "ctrl+[KeyM]"
+    idea:
+      action: "EditorMatchBrace"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorMoveToPageBottom"
+    binding:
+      macos:
+        - "meta+[PageDown]"
+      default:
+        - "ctrl+[PageDown]"
+    idea:
+      action: "EditorMoveToPageBottom"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorMoveToPageBottomWithSelection"
+    binding:
+      macos:
+        - "meta+shift+[PageDown]"
+      default:
+        - "ctrl+shift+[PageDown]"
+    idea:
+      action: "EditorMoveToPageBottomWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorMoveToPageTop"
+    binding:
+      macos:
+        - "meta+[PageUp]"
+      default:
+        - "ctrl+[PageUp]"
+    idea:
+      action: "EditorMoveToPageTop"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorMoveToPageTopWithSelection"
+    binding:
+      macos:
+        - "meta+shift+[PageUp]"
+      default:
+        - "ctrl+shift+[PageUp]"
+    idea:
+      action: "EditorMoveToPageTopWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorNextWord"
+    binding:
+      - "alt+[right]"
+      - "ctrl+alt+[KeyF]"
+    idea:
+      action: "EditorNextWord"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorNextWordWithSelection"
+    binding:
+      - "alt+shift+[right]"
+      - "ctrl+alt+shift+[KeyF]"
+    idea:
+      action: "EditorNextWordWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorPageDown"
+    binding:
+      - "[PageDown]"
+    idea:
+      action: "EditorPageDown"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorPageDownWithSelection"
+    binding:
+      - "shift+[PageDown]"
+    idea:
+      action: "EditorPageDownWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorPageUp"
+    binding:
+      - "[PageUp]"
+    idea:
+      action: "EditorPageUp"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorPageUpWithSelection"
+    binding:
+      - "shift+[PageUp]"
+    idea:
+      action: "EditorPageUpWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorPasteFromX11"
+    binding: []
+    idea:
+      action: "EditorPasteFromX11"
+      mouse:
+        - "button2"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorPasteSimple"
+    binding:
+      macos:
+        - "meta+alt+shift+[KeyV]"
+      default:
+        - "ctrl+alt+shift+[KeyV]"
+    idea:
+      action: "EditorPasteSimple"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorPreviousWord"
+    binding:
+      - "alt+[left]"
+      - "ctrl+alt+[KeyB]"
+    idea:
+      action: "EditorPreviousWord"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorPreviousWordWithSelection"
+    binding:
+      - "alt+shift+[left]"
+      - "ctrl+alt+shift+[KeyB]"
+    idea:
+      action: "EditorPreviousWordWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorRight"
+    binding:
+      - "[right]"
+      - "ctrl+[KeyF]"
+    idea:
+      action: "EditorRight"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorRightWithSelection"
+    binding:
+      - "shift+[right]"
+    idea:
+      action: "EditorRightWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorScrollToCenter"
+    binding:
+      - "ctrl+[KeyL]"
+    idea:
+      action: "EditorScrollToCenter"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorSelectWord"
+    binding:
+      - "alt+[up]"
+    idea:
+      action: "EditorSelectWord"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorShowGutterIconTooltip"
+    binding:
+      - "alt+shift+6 [KeyT]"
+    idea:
+      action: "EditorShowGutterIconTooltip"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorSplitLine"
+    binding:
+      macos:
+        - "meta+[enter]"
+      default:
+        - "ctrl+[enter]"
+    idea:
+      action: "EditorSplitLine"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorStartNewLine"
+    binding:
+      - "shift+[enter]"
+    idea:
+      action: "EditorStartNewLine"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorStartNewLineBefore"
+    binding:
+      macos:
+        - "meta+alt+[enter]"
+      default:
+        - "ctrl+alt+[enter]"
+    idea:
+      action: "EditorStartNewLineBefore"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorTab"
+    binding:
+      - "[tab]"
+    idea:
+      action: "EditorTab"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorTextEnd"
+    binding:
+      macos:
+        - "meta+[end]"
+      default:
+        - "ctrl+[end]"
+    idea:
+      action: "EditorTextEnd"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorTextEndWithSelection"
+    binding:
+      macos:
+        - "meta+shift+[end]"
+      default:
+        - "ctrl+shift+[end]"
+    idea:
+      action: "EditorTextEndWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorTextStart"
+    binding:
+      macos:
+        - "meta+[home]"
+      default:
+        - "ctrl+[home]"
+    idea:
+      action: "EditorTextStart"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorTextStartWithSelection"
+    binding:
+      macos:
+        - "meta+shift+[home]"
+      default:
+        - "ctrl+shift+[home]"
+    idea:
+      action: "EditorTextStartWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorToggleCase"
+    binding:
+      macos:
+        - "meta+shift+[KeyU]"
+      default:
+        - "ctrl+shift+[KeyU]"
+    idea:
+      action: "EditorToggleCase"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorToggleColumnMode"
+    binding:
+      macos:
+        - "shift+meta+8"
+      default:
+        - "shift+ctrl+8"
+    idea:
+      action: "EditorToggleColumnMode"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorToggleInsertState"
+    binding:
+      - "[INSERT]"
+    idea:
+      action: "EditorToggleInsertState"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorUnSelectWord"
+    binding:
+      - "alt+[down]"
+    idea:
+      action: "EditorUnSelectWord"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorUnindentSelection"
+    binding:
+      - "shift+[tab]"
+    idea:
+      action: "EditorUnindentSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorUp"
+    binding:
+      - "[up]"
+      - "ctrl+[KeyP]"
+    idea:
+      action: "EditorUp"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EditorUpWithSelection"
+    binding:
+      - "shift+[up]"
+    idea:
+      action: "EditorUpWithSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EmojiAndSymbols"
+    binding:
+      macos:
+        - "ctrl+meta+[space]"
+      default:
+        - "ctrl+alt+[space]"
+    idea:
+      action: "EmojiAndSymbols"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.EvaluateExpression"
+    binding:
+      - "alt+[F8]"
+    idea:
+      action: "EvaluateExpression"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Exit"
+    binding:
+      macos:
+        - "meta+[KeyQ]"
+      default:
+        - "ctrl+[KeyQ]"
+    idea:
+      action: "Exit"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandAll"
+    binding:
+      macos:
+        - "meta+[ADD]"
+        - "meta+[Equals]"
+      default:
+        - "ctrl+[ADD]"
+        - "ctrl+[Equals]"
+    idea:
+      action: "ExpandAll"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandAllRegions"
+    binding:
+      macos:
+        - "meta+shift+[ADD]"
+        - "meta+shift+[Equals]"
+      default:
+        - "ctrl+shift+[ADD]"
+        - "ctrl+shift+[Equals]"
+    idea:
+      action: "ExpandAllRegions"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandAllToLevel1"
+    binding:
+      macos:
+        - "meta+alt+[MULTIPLY] 1"
+        - "meta+alt+[MULTIPLY] [NUMPAD1]"
+      default:
+        - "ctrl+alt+[MULTIPLY] 1"
+        - "ctrl+alt+[MULTIPLY] [NUMPAD1]"
+    idea:
+      action: "ExpandAllToLevel1"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandAllToLevel2"
+    binding:
+      macos:
+        - "meta+alt+[MULTIPLY] 2"
+        - "meta+alt+[MULTIPLY] [NUMPAD2]"
+      default:
+        - "ctrl+alt+[MULTIPLY] 2"
+        - "ctrl+alt+[MULTIPLY] [NUMPAD2]"
+    idea:
+      action: "ExpandAllToLevel2"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandAllToLevel3"
+    binding:
+      macos:
+        - "meta+alt+[MULTIPLY] 3"
+        - "meta+alt+[MULTIPLY] [NUMPAD3]"
+      default:
+        - "ctrl+alt+[MULTIPLY] 3"
+        - "ctrl+alt+[MULTIPLY] [NUMPAD3]"
+    idea:
+      action: "ExpandAllToLevel3"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandAllToLevel4"
+    binding:
+      macos:
+        - "meta+alt+[MULTIPLY] 4"
+        - "meta+alt+[MULTIPLY] [NUMPAD4]"
+      default:
+        - "ctrl+alt+[MULTIPLY] 4"
+        - "ctrl+alt+[MULTIPLY] [NUMPAD4]"
+    idea:
+      action: "ExpandAllToLevel4"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandAllToLevel5"
+    binding:
+      macos:
+        - "meta+alt+[MULTIPLY] 5"
+        - "meta+alt+[MULTIPLY] [NUMPAD5]"
+      default:
+        - "ctrl+alt+[MULTIPLY] 5"
+        - "ctrl+alt+[MULTIPLY] [NUMPAD5]"
+    idea:
+      action: "ExpandAllToLevel5"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandExpandableComponent"
+    binding:
+      macos:
+        - "shift+[enter]"
+        - "meta+[ADD]"
+        - "meta+[Equals]"
+      default:
+        - "shift+[enter]"
+        - "ctrl+[ADD]"
+        - "ctrl+[Equals]"
+    idea:
+      action: "ExpandExpandableComponent"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandLiveTemplateByTab"
+    binding:
+      - "[tab]"
+    idea:
+      action: "ExpandLiveTemplateByTab"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandRegion"
+    binding:
+      macos:
+        - "meta+[ADD]"
+        - "meta+[Equals]"
+      default:
+        - "ctrl+[ADD]"
+        - "ctrl+[Equals]"
+    idea:
+      action: "ExpandRegion"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandRegionRecursively"
+    binding:
+      macos:
+        - "meta+alt+[ADD]"
+        - "meta+alt+[Equals]"
+      default:
+        - "ctrl+alt+[ADD]"
+        - "ctrl+alt+[Equals]"
+    idea:
+      action: "ExpandRegionRecursively"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandToLevel1"
+    binding:
+      macos:
+        - "meta+[MULTIPLY] 1"
+        - "meta+[MULTIPLY] [NUMPAD1]"
+      default:
+        - "ctrl+[MULTIPLY] 1"
+        - "ctrl+[MULTIPLY] [NUMPAD1]"
+    idea:
+      action: "ExpandToLevel1"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandToLevel2"
+    binding:
+      macos:
+        - "meta+[MULTIPLY] 2"
+        - "meta+[MULTIPLY] [NUMPAD2]"
+      default:
+        - "ctrl+[MULTIPLY] 2"
+        - "ctrl+[MULTIPLY] [NUMPAD2]"
+    idea:
+      action: "ExpandToLevel2"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandToLevel3"
+    binding:
+      macos:
+        - "meta+[MULTIPLY] 3"
+        - "meta+[MULTIPLY] [NUMPAD3]"
+      default:
+        - "ctrl+[MULTIPLY] 3"
+        - "ctrl+[MULTIPLY] [NUMPAD3]"
+    idea:
+      action: "ExpandToLevel3"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandToLevel4"
+    binding:
+      macos:
+        - "meta+[MULTIPLY] 4"
+        - "meta+[MULTIPLY] [NUMPAD4]"
+      default:
+        - "ctrl+[MULTIPLY] 4"
+        - "ctrl+[MULTIPLY] [NUMPAD4]"
+    idea:
+      action: "ExpandToLevel4"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandToLevel5"
+    binding:
+      macos:
+        - "meta+[MULTIPLY] 5"
+        - "meta+[MULTIPLY] [NUMPAD5]"
+      default:
+        - "ctrl+[MULTIPLY] 5"
+        - "ctrl+[MULTIPLY] [NUMPAD5]"
+    idea:
+      action: "ExpandToLevel5"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpandTreeNode"
+    binding:
+      - "[ADD]"
+    idea:
+      action: "ExpandTreeNode"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExportToTextFile"
+    binding:
+      - "ctrl+[KeyO]"
+    idea:
+      action: "ExportToTextFile"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExpressionTypeInfo"
+    binding:
+      - "ctrl+shift+[KeyP]"
+    idea:
+      action: "ExpressionTypeInfo"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExternalJavaDoc"
+    binding:
+      - "shift+[F1]"
+    idea:
+      action: "ExternalJavaDoc"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ExtractMethod"
+    binding:
+      macos:
+        - "meta+alt+[KeyM]"
+      default:
+        - "ctrl+alt+[KeyM]"
+    idea:
+      action: "ExtractMethod"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FileChooser.GoToParent"
+    binding:
+      macos:
+        - "meta+[up]"
+      default:
+        - "ctrl+[up]"
+    idea:
+      action: "FileChooser.GoToParent"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FileChooser.GoToRoot"
+    binding:
+      macos:
+        - "meta+[Slash]"
+      default:
+        - "ctrl+[Slash]"
+    idea:
+      action: "FileChooser.GoToRoot"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FileChooser.GotoDesktop"
+    binding:
+      macos:
+        - "meta+[KeyD]"
+      default:
+        - "ctrl+[KeyD]"
+    idea:
+      action: "FileChooser.GotoDesktop"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FileChooser.GotoHome"
+    binding:
+      macos:
+        - "meta+1"
+      default:
+        - "ctrl+1"
+    idea:
+      action: "FileChooser.GotoHome"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FileChooser.GotoModule"
+    binding:
+      macos:
+        - "meta+3"
+      default:
+        - "ctrl+3"
+    idea:
+      action: "FileChooser.GotoModule"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FileChooser.GotoProject"
+    binding:
+      macos:
+        - "meta+2"
+      default:
+        - "ctrl+2"
+    idea:
+      action: "FileChooser.GotoProject"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FileChooser.NewFolder"
+    binding:
+      macos:
+        - "alt+[INSERT]"
+        - "meta+[KeyN]"
+      default:
+        - "alt+[INSERT]"
+        - "ctrl+[KeyN]"
+    idea:
+      action: "FileChooser.NewFolder"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FileChooser.TogglePathBar"
+    binding:
+      macos:
+        - "meta+[KeyP]"
+      default:
+        - "ctrl+[KeyP]"
+    idea:
+      action: "FileChooser.TogglePathBar"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FileStructurePopup"
+    binding:
+      macos:
+        - "meta+[F12]"
+      default:
+        - "ctrl+[F12]"
+    idea:
+      action: "FileStructurePopup"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Find"
+    binding:
+      macos:
+        - "meta+[KeyF]"
+      default:
+        - "ctrl+[KeyF]"
+    idea:
+      action: "Find"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FindInPath"
+    binding:
+      macos:
+        - "meta+shift+[KeyF]"
+      default:
+        - "ctrl+shift+[KeyF]"
+    idea:
+      action: "FindInPath"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FindNext"
+    binding:
+      macos:
+        - "meta+[KeyG]"
+      default:
+        - "ctrl+[KeyG]"
+    idea:
+      action: "FindNext"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FindPrevious"
+    binding:
+      macos:
+        - "meta+shift+[KeyG]"
+      default:
+        - "ctrl+shift+[KeyG]"
+    idea:
+      action: "FindPrevious"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FindUsages"
+    binding:
+      - "alt+[F7]"
+    idea:
+      action: "FindUsages"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FindUsagesInFile"
+    binding:
+      macos:
+        - "meta+[F7]"
+      default:
+        - "ctrl+[F7]"
+    idea:
+      action: "FindUsagesInFile"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FocusEditor"
+    binding:
+      - "[escape]"
+    idea:
+      action: "FocusEditor"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ForceRefresh"
+    binding:
+      macos:
+        - "meta+alt+shift+[KeyR]"
+      default:
+        - "ctrl+alt+shift+[KeyR]"
+    idea:
+      action: "ForceRefresh"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ForceRunToCursor"
+    binding:
+      macos:
+        - "meta+alt+[F9]"
+      default:
+        - "ctrl+alt+[F9]"
+    idea:
+      action: "ForceRunToCursor"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ForceStepInto"
+    binding:
+      - "alt+shift+[F7]"
+    idea:
+      action: "ForceStepInto"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ForceStepOver"
+    binding:
+      - "alt+shift+[F8]"
+    idea:
+      action: "ForceStepOver"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Forward"
+    binding:
+      macos:
+        - "meta+[BracketRight]"
+        - "meta+alt+[right]"
+      default:
+        - "ctrl+[BracketRight]"
+        - "ctrl+alt+[right]"
+    idea:
+      action: "Forward"
+      mouse:
+        - "button5"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.FullyExpandTreeNode"
+    binding:
+      - "[MULTIPLY]"
+    idea:
+      action: "FullyExpandTreeNode"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Generate"
+    binding:
+      macos:
+        - "meta+[KeyN]"
+        - "ctrl+[enter]"
+      default:
+        - "ctrl+[KeyN]"
+        - "ctrl+[enter]"
+    idea:
+      action: "Generate"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Git.CreateNewBranch"
+    binding:
+      macos:
+        - "meta+alt+[KeyN]"
+      default:
+        - "ctrl+alt+[KeyN]"
+    idea:
+      action: "Git.CreateNewBranch"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Git.New.Branch.In.Log"
+    binding:
+      macos:
+        - "meta+alt+[KeyN]"
+      default:
+        - "ctrl+alt+[KeyN]"
+    idea:
+      action: "Git.New.Branch.In.Log"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Git.Rename.Local.Branch"
+    binding:
+      - "[F2]"
+      - "shift+[F6]"
+    idea:
+      action: "Git.Rename.Local.Branch"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Git.Reword.Commit"
+    binding:
+      - "[F2]"
+      - "shift+[F6]"
+    idea:
+      action: "Git.Reword.Commit"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoAction"
+    binding:
+      macos:
+        - "meta+shift+[KeyA]"
+      default:
+        - "ctrl+shift+[KeyA]"
+    idea:
+      action: "GotoAction"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoBookmark0"
+    binding:
+      - "ctrl+0"
+    idea:
+      action: "GotoBookmark0"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoBookmark1"
+    binding:
+      - "ctrl+1"
+    idea:
+      action: "GotoBookmark1"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoBookmark2"
+    binding:
+      - "ctrl+2"
+    idea:
+      action: "GotoBookmark2"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoBookmark3"
+    binding:
+      - "ctrl+3"
+    idea:
+      action: "GotoBookmark3"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoBookmark4"
+    binding:
+      - "ctrl+4"
+    idea:
+      action: "GotoBookmark4"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoBookmark5"
+    binding:
+      - "ctrl+5"
+    idea:
+      action: "GotoBookmark5"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoBookmark6"
+    binding:
+      - "ctrl+6"
+    idea:
+      action: "GotoBookmark6"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoBookmark7"
+    binding:
+      - "ctrl+7"
+    idea:
+      action: "GotoBookmark7"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoBookmark8"
+    binding:
+      - "ctrl+8"
+    idea:
+      action: "GotoBookmark8"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoBookmark9"
+    binding:
+      - "ctrl+9"
+    idea:
+      action: "GotoBookmark9"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoClass"
+    binding:
+      macos:
+        - "meta+[KeyO]"
+      default:
+        - "ctrl+[KeyO]"
+    idea:
+      action: "GotoClass"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoCustomRegion"
+    binding:
+      macos:
+        - "meta+alt+[Period]"
+      default:
+        - "ctrl+alt+[Period]"
+    idea:
+      action: "GotoCustomRegion"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoDeclaration"
+    binding:
+      macos:
+        - "meta+[KeyB]"
+      default:
+        - "ctrl+[KeyB]"
+    idea:
+      action: "GotoDeclaration"
+      mouse:
+        - "meta button1"
+        - "Force touch"
+        - "button2"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoFile"
+    binding:
+      macos:
+        - "meta+shift+[KeyO]"
+      default:
+        - "ctrl+shift+[KeyO]"
+    idea:
+      action: "GotoFile"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoImplementation"
+    binding:
+      macos:
+        - "meta+alt+[KeyB]"
+      default:
+        - "ctrl+alt+[KeyB]"
+    idea:
+      action: "GotoImplementation"
+      mouse:
+        - "meta alt button1"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoLine"
+    binding:
+      macos:
+        - "meta+[KeyL]"
+      default:
+        - "ctrl+[KeyL]"
+    idea:
+      action: "GotoLine"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoNextElementUnderCaretUsage"
+    binding:
+      - "ctrl+alt+[down]"
+    idea:
+      action: "GotoNextElementUnderCaretUsage"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoNextError"
+    binding:
+      - "[F2]"
+    idea:
+      action: "GotoNextError"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoPrevElementUnderCaretUsage"
+    binding:
+      - "ctrl+alt+[up]"
+    idea:
+      action: "GotoPrevElementUnderCaretUsage"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoPreviousError"
+    binding:
+      - "shift+[F2]"
+    idea:
+      action: "GotoPreviousError"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoRelated"
+    binding:
+      macos:
+        - "ctrl+meta+[up]"
+      default:
+        - "ctrl+alt+[up]"
+    idea:
+      action: "GotoRelated"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoSuperMethod"
+    binding:
+      macos:
+        - "meta+[KeyU]"
+      default:
+        - "ctrl+[KeyU]"
+    idea:
+      action: "GotoSuperMethod"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoSymbol"
+    binding:
+      macos:
+        - "meta+alt+[KeyO]"
+      default:
+        - "ctrl+alt+[KeyO]"
+    idea:
+      action: "GotoSymbol"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.GotoTypeDeclaration"
+    binding:
+      macos:
+        - "meta+shift+[KeyB]"
+        - "ctrl+shift+[KeyB]"
+      default:
+        - "ctrl+shift+[KeyB]"
+        - "ctrl+shift+[KeyB]"
+    idea:
+      action: "GotoTypeDeclaration"
+      mouse:
+        - "meta shift button1"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.HideActiveWindow"
+    binding:
+      - "shift+[escape]"
+    idea:
+      action: "HideActiveWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.HideAllWindows"
+    binding:
+      macos:
+        - "meta+shift+[F12]"
+      default:
+        - "ctrl+shift+[F12]"
+    idea:
+      action: "HideAllWindows"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.HighlightUsagesInFile"
+    binding:
+      macos:
+        - "meta+shift+[F7]"
+      default:
+        - "ctrl+shift+[F7]"
+    idea:
+      action: "HighlightUsagesInFile"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.HippieBackwardCompletion"
+    binding:
+      - "alt+shift+[Slash]"
+    idea:
+      action: "HippieBackwardCompletion"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.HippieCompletion"
+    binding:
+      - "alt+[Slash]"
+    idea:
+      action: "HippieCompletion"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ImplementMethods"
+    binding:
+      - "ctrl+[KeyI]"
+    idea:
+      action: "ImplementMethods"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Inline"
+    binding:
+      macos:
+        - "meta+alt+[KeyN]"
+      default:
+        - "ctrl+alt+[KeyN]"
+    idea:
+      action: "Inline"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.InsertLiveTemplate"
+    binding:
+      macos:
+        - "meta+[KeyJ]"
+      default:
+        - "ctrl+[KeyJ]"
+    idea:
+      action: "InsertLiveTemplate"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.IntroduceConstant"
+    binding:
+      macos:
+        - "meta+alt+[KeyC]"
+      default:
+        - "ctrl+alt+[KeyC]"
+    idea:
+      action: "IntroduceConstant"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.IntroduceField"
+    binding:
+      macos:
+        - "meta+alt+[KeyF]"
+      default:
+        - "ctrl+alt+[KeyF]"
+    idea:
+      action: "IntroduceField"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.IntroduceParameter"
+    binding:
+      macos:
+        - "meta+alt+[KeyP]"
+      default:
+        - "ctrl+alt+[KeyP]"
+    idea:
+      action: "IntroduceParameter"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.IntroduceVariable"
+    binding:
+      macos:
+        - "meta+alt+[KeyV]"
+      default:
+        - "ctrl+alt+[KeyV]"
+    idea:
+      action: "IntroduceVariable"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.JumpToLastChange"
+    binding:
+      macos:
+        - "meta+shift+[Backspace]"
+      default:
+        - "ctrl+shift+[Backspace]"
+    idea:
+      action: "JumpToLastChange"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.JumpToLastWindow"
+    binding:
+      - "[F12]"
+    idea:
+      action: "JumpToLastWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.List-selectFirstRow"
+    binding:
+      - "alt+[up]"
+    idea:
+      action: "List-selectFirstRow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.List-selectFirstRowExtendSelection"
+    binding:
+      - "alt+shift+[up]"
+    idea:
+      action: "List-selectFirstRowExtendSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.List-selectLastRow"
+    binding:
+      - "alt+[down]"
+    idea:
+      action: "List-selectLastRow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.List-selectLastRowExtendSelection"
+    binding:
+      - "alt+shift+[down]"
+    idea:
+      action: "List-selectLastRowExtendSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MaximizeToolWindow"
+    binding:
+      macos:
+        - "meta+shift+[QUOTE]"
+      default:
+        - "ctrl+shift+[QUOTE]"
+    idea:
+      action: "MaximizeToolWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MethodDown"
+    binding:
+      - "ctrl+shift+[down]"
+    idea:
+      action: "MethodDown"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MethodHierarchy"
+    binding:
+      macos:
+        - "meta+shift+[KeyH]"
+      default:
+        - "ctrl+shift+[KeyH]"
+    idea:
+      action: "MethodHierarchy"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MethodOverloadSwitchDown"
+    binding:
+      - "alt+[down]"
+    idea:
+      action: "MethodOverloadSwitchDown"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MethodOverloadSwitchUp"
+    binding:
+      - "alt+[up]"
+    idea:
+      action: "MethodOverloadSwitchUp"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MethodUp"
+    binding:
+      - "ctrl+shift+[up]"
+    idea:
+      action: "MethodUp"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MinimizeCurrentWindow"
+    binding:
+      macos:
+        - "meta+[KeyM]"
+      default:
+        - "ctrl+[KeyM]"
+    idea:
+      action: "MinimizeCurrentWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Move"
+    binding:
+      - "[F6]"
+    idea:
+      action: "Move"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MoveElementLeft"
+    binding:
+      macos:
+        - "meta+alt+shift+[left]"
+      default:
+        - "ctrl+alt+shift+[left]"
+    idea:
+      action: "MoveElementLeft"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MoveElementRight"
+    binding:
+      macos:
+        - "meta+alt+shift+[right]"
+      default:
+        - "ctrl+alt+shift+[right]"
+    idea:
+      action: "MoveElementRight"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MoveLineDown"
+    binding:
+      - "alt+shift+[down]"
+    idea:
+      action: "MoveLineDown"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MoveLineUp"
+    binding:
+      - "alt+shift+[up]"
+    idea:
+      action: "MoveLineUp"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MoveStatementDown"
+    binding:
+      macos:
+        - "meta+shift+[down]"
+      default:
+        - "ctrl+shift+[down]"
+    idea:
+      action: "MoveStatementDown"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.MoveStatementUp"
+    binding:
+      macos:
+        - "meta+shift+[up]"
+      default:
+        - "ctrl+shift+[up]"
+    idea:
+      action: "MoveStatementUp"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NewElement"
+    binding:
+      macos:
+        - "meta+[KeyN]"
+        - "ctrl+[enter]"
+      default:
+        - "ctrl+[KeyN]"
+        - "ctrl+[enter]"
+    idea:
+      action: "NewElement"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NewElementSamePlace"
+    binding:
+      - "ctrl+alt+[KeyN]"
+    idea:
+      action: "NewElementSamePlace"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NewScratchFile"
+    binding:
+      macos:
+        - "meta+shift+[KeyN]"
+      default:
+        - "ctrl+shift+[KeyN]"
+    idea:
+      action: "NewScratchFile"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NextDiff"
+    binding:
+      - "[F7]"
+    idea:
+      action: "NextDiff"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NextEditorTab"
+    binding:
+      - "ctrl+shift+[right]"
+    idea:
+      action: "NextEditorTab"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NextOccurence"
+    binding:
+      macos:
+        - "meta+alt+[down]"
+      default:
+        - "ctrl+alt+[down]"
+    idea:
+      action: "NextOccurence"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NextParameter"
+    binding:
+      - "[tab]"
+    idea:
+      action: "NextParameter"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NextProjectWindow"
+    binding:
+      macos:
+        - "meta+alt+[BACK_QUOTE]"
+      default:
+        - "ctrl+alt+[BACK_QUOTE]"
+    idea:
+      action: "NextProjectWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NextSplitter"
+    binding:
+      - "alt+[tab]"
+    idea:
+      action: "NextSplitter"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NextTab"
+    binding:
+      macos:
+        - "meta+shift+[BracketRight]"
+        - "ctrl+[right]"
+      default:
+        - "ctrl+shift+[BracketRight]"
+        - "ctrl+[right]"
+    idea:
+      action: "NextTab"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NextTemplateVariable"
+    binding:
+      - "[tab]"
+      - "[enter]"
+    idea:
+      action: "NextTemplateVariable"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.NextWindow"
+    binding:
+      macos:
+        - "meta+[BACK_QUOTE]"
+      default:
+        - "ctrl+[BACK_QUOTE]"
+    idea:
+      action: "NextWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.OpenInRightSplit"
+    binding:
+      - "shift+[enter]"
+    idea:
+      action: "OpenInRightSplit"
+      mouse:
+        - "alt button1 doubleClick"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.OptimizeImports"
+    binding:
+      - "ctrl+alt+[KeyO]"
+    idea:
+      action: "OptimizeImports"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.OverrideMethods"
+    binding:
+      - "ctrl+[KeyO]"
+    idea:
+      action: "OverrideMethods"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ParameterInfo"
+    binding:
+      macos:
+        - "meta+[KeyP]"
+      default:
+        - "ctrl+[KeyP]"
+    idea:
+      action: "ParameterInfo"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PasteMultiple"
+    binding:
+      macos:
+        - "meta+shift+[INSERT]"
+      default:
+        - "ctrl+shift+[INSERT]"
+    idea:
+      action: "PasteMultiple"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PopupHector"
+    binding:
+      macos:
+        - "meta+alt+shift+[KeyH]"
+      default:
+        - "ctrl+alt+shift+[KeyH]"
+    idea:
+      action: "PopupHector"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PrevParameter"
+    binding:
+      - "shift+[tab]"
+    idea:
+      action: "PrevParameter"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PrevSplitter"
+    binding:
+      - "alt+shift+[tab]"
+    idea:
+      action: "PrevSplitter"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PreviousDiff"
+    binding:
+      - "shift+[F7]"
+    idea:
+      action: "PreviousDiff"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PreviousEditorTab"
+    binding:
+      - "ctrl+shift+[left]"
+    idea:
+      action: "PreviousEditorTab"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PreviousOccurence"
+    binding:
+      macos:
+        - "meta+alt+[up]"
+      default:
+        - "ctrl+alt+[up]"
+    idea:
+      action: "PreviousOccurence"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PreviousProjectWindow"
+    binding:
+      macos:
+        - "meta+shift+alt+[BACK_QUOTE]"
+      default:
+        - "ctrl+shift+alt+[BACK_QUOTE]"
+    idea:
+      action: "PreviousProjectWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PreviousTab"
+    binding:
+      macos:
+        - "meta+shift+[BracketLeft]"
+        - "ctrl+[left]"
+      default:
+        - "ctrl+shift+[BracketLeft]"
+        - "ctrl+[left]"
+    idea:
+      action: "PreviousTab"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PreviousTemplateVariable"
+    binding:
+      - "shift+[tab]"
+    idea:
+      action: "PreviousTemplateVariable"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.PreviousWindow"
+    binding:
+      macos:
+        - "meta+shift+[BACK_QUOTE]"
+      default:
+        - "ctrl+shift+[BACK_QUOTE]"
+    idea:
+      action: "PreviousWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.QuickActionPopup"
+    binding:
+      macos:
+        - "meta+alt+[enter]"
+      default:
+        - "ctrl+alt+[enter]"
+    idea:
+      action: "QuickActionPopup"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.QuickChangeScheme"
+    binding:
+      - "ctrl+[BACK_QUOTE]"
+    idea:
+      action: "QuickChangeScheme"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.QuickEvaluateExpression"
+    binding:
+      macos:
+        - "meta+alt+[F8]"
+      default:
+        - "ctrl+alt+[F8]"
+    idea:
+      action: "QuickEvaluateExpression"
+      mouse:
+        - "alt button1"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.QuickImplementations"
+    binding:
+      macos:
+        - "alt+[space]"
+        - "meta+[KeyY]"
+      default:
+        - "alt+[space]"
+        - "ctrl+[KeyY]"
+    idea:
+      action: "QuickImplementations"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.QuickJavaDoc"
+    binding:
+      - "[F1]"
+      - "ctrl+[KeyJ]"
+    idea:
+      action: "QuickJavaDoc"
+      mouse:
+        - "ctrl button2"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.RecentFiles"
+    binding:
+      macos:
+        - "meta+[KeyE]"
+      default:
+        - "ctrl+[KeyE]"
+    idea:
+      action: "RecentFiles"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.RecentLocations"
+    binding:
+      macos:
+        - "meta+shift+[KeyE]"
+      default:
+        - "ctrl+shift+[KeyE]"
+    idea:
+      action: "RecentLocations"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Refactorings.QuickListPopupAction"
+    binding:
+      - "ctrl+[KeyT]"
+    idea:
+      action: "Refactorings.QuickListPopupAction"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ReformatCode"
+    binding:
+      macos:
+        - "meta+alt+[KeyL]"
+      default:
+        - "ctrl+alt+[KeyL]"
+    idea:
+      action: "ReformatCode"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Refresh"
+    binding:
+      macos:
+        - "meta+[KeyR]"
+      default:
+        - "ctrl+[KeyR]"
+    idea:
+      action: "Refresh"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.RenameElement"
+    binding:
+      - "shift+[F6]"
+    idea:
+      action: "RenameElement"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Replace"
+    binding:
+      macos:
+        - "meta+[KeyR]"
+      default:
+        - "ctrl+[KeyR]"
+    idea:
+      action: "Replace"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ReplaceInPath"
+    binding:
+      macos:
+        - "meta+shift+[KeyR]"
+      default:
+        - "ctrl+shift+[KeyR]"
+    idea:
+      action: "ReplaceInPath"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Rerun"
+    binding:
+      macos:
+        - "meta+[KeyR]"
+      default:
+        - "ctrl+[KeyR]"
+    idea:
+      action: "Rerun"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.RerunTests"
+    binding:
+      macos:
+        - "ctrl+meta+[KeyR]"
+        - "shift+alt+[KeyR]"
+      default:
+        - "ctrl+alt+[KeyR]"
+        - "shift+alt+[KeyR]"
+    idea:
+      action: "RerunTests"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ResetIdeScaleAction"
+    binding:
+      - "ctrl+alt+0"
+    idea:
+      action: "ResetIdeScaleAction"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ResizeToolWindowDown"
+    binding:
+      - "ctrl+alt+[down]"
+    idea:
+      action: "ResizeToolWindowDown"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ResizeToolWindowLeft"
+    binding:
+      - "ctrl+alt+[left]"
+    idea:
+      action: "ResizeToolWindowLeft"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ResizeToolWindowRight"
+    binding:
+      - "ctrl+alt+[right]"
+    idea:
+      action: "ResizeToolWindowRight"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ResizeToolWindowUp"
+    binding:
+      - "ctrl+alt+[up]"
+    idea:
+      action: "ResizeToolWindowUp"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.RestoreDefaultLayout"
+    binding:
+      - "shift+[F12]"
+    idea:
+      action: "RestoreDefaultLayout"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Resume"
+    binding:
+      macos:
+        - "meta+alt+[KeyR]"
+        - "[F9]"
+      default:
+        - "ctrl+alt+[KeyR]"
+        - "[F9]"
+    idea:
+      action: "Resume"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Run"
+    binding:
+      - "ctrl+[KeyR]"
+    idea:
+      action: "Run"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.RunClass"
+    binding:
+      - "ctrl+shift+[KeyR]"
+    idea:
+      action: "RunClass"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.RunInspection"
+    binding:
+      macos:
+        - "meta+shift+alt+[KeyI]"
+      default:
+        - "ctrl+shift+alt+[KeyI]"
+    idea:
+      action: "RunInspection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.RunToCursor"
+    binding:
+      - "alt+[F9]"
+    idea:
+      action: "RunToCursor"
+      mouse:
+        - "Force touch"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SafeDelete"
+    binding:
+      macos:
+        - "meta+[delete]"
+      default:
+        - "ctrl+[delete]"
+    idea:
+      action: "SafeDelete"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SaveAll"
+    binding:
+      macos:
+        - "meta+[KeyS]"
+      default:
+        - "ctrl+[KeyS]"
+    idea:
+      action: "SaveAll"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SearchEverywhere.CompleteCommand"
+    binding:
+      - "[tab]"
+    idea:
+      action: "SearchEverywhere.CompleteCommand"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SearchEverywhere.NavigateToNextGroup"
+    binding:
+      macos:
+        - "[PageDown]"
+        - "meta+[down]"
+      default:
+        - "[PageDown]"
+        - "ctrl+[down]"
+    idea:
+      action: "SearchEverywhere.NavigateToNextGroup"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SearchEverywhere.NavigateToPrevGroup"
+    binding:
+      macos:
+        - "[PageUp]"
+        - "meta+[up]"
+      default:
+        - "[PageUp]"
+        - "ctrl+[up]"
+    idea:
+      action: "SearchEverywhere.NavigateToPrevGroup"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SearchEverywhere.NextTab"
+    binding:
+      - "[tab]"
+    idea:
+      action: "SearchEverywhere.NextTab"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SearchEverywhere.PrevTab"
+    binding:
+      - "shift+[tab]"
+    idea:
+      action: "SearchEverywhere.PrevTab"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SearchEverywhere.SelectItem"
+    binding:
+      - "[enter]"
+    idea:
+      action: "SearchEverywhere.SelectItem"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SelectAllOccurrences"
+    binding:
+      macos:
+        - "meta+ctrl+[KeyG]"
+      default:
+        - "alt+ctrl+[KeyG]"
+    idea:
+      action: "SelectAllOccurrences"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SelectIn"
+    binding:
+      - "alt+[F1]"
+    idea:
+      action: "SelectIn"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SelectNextOccurrence"
+    binding:
+      - "ctrl+[KeyG]"
+    idea:
+      action: "SelectNextOccurrence"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SelectVirtualTemplateElement"
+    binding:
+      - "alt+shift+[KeyO]"
+    idea:
+      action: "SelectVirtualTemplateElement"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SendEOF"
+    binding:
+      macos:
+        - "meta+[KeyD]"
+      default:
+        - "ctrl+[KeyD]"
+    idea:
+      action: "SendEOF"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ServiceView.GroupByContributor"
+    binding:
+      - "ctrl+[KeyT]"
+    idea:
+      action: "ServiceView.GroupByContributor"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShelveChanges.UnshelveWithDialog"
+    binding:
+      macos:
+        - "meta+shift+[KeyU]"
+      default:
+        - "ctrl+shift+[KeyU]"
+    idea:
+      action: "ShelveChanges.UnshelveWithDialog"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShelvedChanges.Rename"
+    binding:
+      - "[F2]"
+      - "shift+[F6]"
+    idea:
+      action: "ShelvedChanges.Rename"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowBookmarks"
+    binding:
+      macos:
+        - "meta+[F3]"
+      default:
+        - "ctrl+[F3]"
+    idea:
+      action: "ShowBookmarks"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowContent"
+    binding:
+      - "ctrl+shift+[down]"
+    idea:
+      action: "ShowContent"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowErrorDescription"
+    binding:
+      macos:
+        - "meta+[F1]"
+      default:
+        - "ctrl+[F1]"
+    idea:
+      action: "ShowErrorDescription"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowExecutionPoint"
+    binding:
+      - "alt+[F10]"
+    idea:
+      action: "ShowExecutionPoint"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowFilePath"
+    binding:
+      macos:
+        - "meta+alt+[F12]"
+      default:
+        - "ctrl+alt+[F12]"
+    idea:
+      action: "ShowFilePath"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowFilterPopup"
+    binding:
+      - "ctrl+alt+[KeyF]"
+    idea:
+      action: "ShowFilterPopup"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowIntentionActions"
+    binding:
+      - "alt+[enter]"
+    idea:
+      action: "ShowIntentionActions"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowNavBar"
+    binding:
+      macos:
+        - "meta+[up]"
+        - "alt+[home]"
+      default:
+        - "ctrl+[up]"
+        - "alt+[home]"
+    idea:
+      action: "ShowNavBar"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowProjectStructureSettings"
+    binding:
+      macos:
+        - "meta+[Semicolon]"
+      default:
+        - "ctrl+[Semicolon]"
+    idea:
+      action: "ShowProjectStructureSettings"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowReformatFileDialog"
+    binding:
+      macos:
+        - "meta+shift+alt+[KeyL]"
+      default:
+        - "ctrl+shift+alt+[KeyL]"
+    idea:
+      action: "ShowReformatFileDialog"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowSearchHistory"
+    binding:
+      - "alt+[down]"
+    idea:
+      action: "ShowSearchHistory"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowSettings"
+    binding:
+      macos:
+        - "meta+[Comma]"
+      default:
+        - "ctrl+[Comma]"
+    idea:
+      action: "ShowSettings"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowSettingsAndFindUsages"
+    binding:
+      macos:
+        - "meta+shift+alt+[F7]"
+      default:
+        - "ctrl+shift+alt+[F7]"
+    idea:
+      action: "ShowSettingsAndFindUsages"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowTypeBookmarks"
+    binding:
+      macos:
+        - "meta+alt+[F3]"
+      default:
+        - "ctrl+alt+[F3]"
+    idea:
+      action: "ShowTypeBookmarks"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ShowUsages"
+    binding:
+      macos:
+        - "meta+alt+[F7]"
+      default:
+        - "ctrl+alt+[F7]"
+    idea:
+      action: "ShowUsages"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SmartStepInto"
+    binding:
+      - "shift+[F7]"
+    idea:
+      action: "SmartStepInto"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SmartTypeCompletion"
+    binding:
+      - "ctrl+shift+[space]"
+    idea:
+      action: "SmartTypeCompletion"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SplitChooser"
+    binding:
+      - "alt+shift+[enter]"
+    idea:
+      action: "SplitChooser"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SplitChooser.Duplicate"
+    binding:
+      macos:
+        - "meta+[enter]"
+      default:
+        - "ctrl+[enter]"
+    idea:
+      action: "SplitChooser.Duplicate"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SplitChooser.NextWindow"
+    binding:
+      - "[tab]"
+    idea:
+      action: "SplitChooser.NextWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SplitChooser.PreviousWindow"
+    binding:
+      - "shift+[tab]"
+    idea:
+      action: "SplitChooser.PreviousWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SplitChooser.Split"
+    binding:
+      - "[enter]"
+    idea:
+      action: "SplitChooser.Split"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SplitChooser.SplitCenter"
+    binding:
+      - "[space]"
+    idea:
+      action: "SplitChooser.SplitCenter"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.StepInto"
+    binding:
+      - "[F7]"
+    idea:
+      action: "StepInto"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.StepOut"
+    binding:
+      - "shift+[F8]"
+    idea:
+      action: "StepOut"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.StepOver"
+    binding:
+      - "[F8]"
+    idea:
+      action: "StepOver"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Stop"
+    binding:
+      macos:
+        - "meta+[F2]"
+      default:
+        - "ctrl+[F2]"
+    idea:
+      action: "Stop"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.StopBackgroundProcesses"
+    binding:
+      macos:
+        - "meta+shift+[F2]"
+      default:
+        - "ctrl+shift+[F2]"
+    idea:
+      action: "StopBackgroundProcesses"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SurroundWith"
+    binding:
+      macos:
+        - "meta+alt+[KeyT]"
+      default:
+        - "ctrl+alt+[KeyT]"
+    idea:
+      action: "SurroundWith"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SurroundWithLiveTemplate"
+    binding:
+      macos:
+        - "meta+alt+[KeyJ]"
+      default:
+        - "ctrl+alt+[KeyJ]"
+    idea:
+      action: "SurroundWithLiveTemplate"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SwitchCoverage"
+    binding:
+      macos:
+        - "meta+alt+[F6]"
+      default:
+        - "ctrl+alt+[F6]"
+    idea:
+      action: "SwitchCoverage"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SwitchHeaderSource"
+    binding:
+      - "[F10]"
+    idea:
+      action: "SwitchHeaderSource"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Switcher"
+    binding:
+      - "ctrl+[tab]"
+      - "ctrl+shift+[tab]"
+    idea:
+      action: "Switcher"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SwitcherIterateItems"
+    binding:
+      macos:
+        - "meta+[KeyE]"
+      default:
+        - "ctrl+[KeyE]"
+    idea:
+      action: "SwitcherIterateItems"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.SwitcherRecentEditedChangedToggleCheckBox"
+    binding:
+      macos:
+        - "meta+[KeyE]"
+      default:
+        - "ctrl+[KeyE]"
+    idea:
+      action: "SwitcherRecentEditedChangedToggleCheckBox"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Synchronize"
+    binding:
+      macos:
+        - "meta+alt+[KeyY]"
+      default:
+        - "ctrl+alt+[KeyY]"
+    idea:
+      action: "Synchronize"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.TextSearchAction"
+    binding:
+      macos:
+        - "meta+shift+alt+[KeyE]"
+      default:
+        - "ctrl+shift+alt+[KeyE]"
+    idea:
+      action: "TextSearchAction"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.TodoViewGroupByFlattenPackage"
+    binding:
+      - "ctrl+[KeyF]"
+    idea:
+      action: "TodoViewGroupByFlattenPackage"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.TodoViewGroupByShowModules"
+    binding:
+      - "ctrl+[KeyM]"
+    idea:
+      action: "TodoViewGroupByShowModules"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.TodoViewGroupByShowPackages"
+    binding:
+      - "ctrl+[KeyP]"
+    idea:
+      action: "TodoViewGroupByShowPackages"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark"
+    binding:
+      - "[F3]"
+    idea:
+      action: "ToggleBookmark"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark0"
+    binding:
+      - "ctrl+shift+0"
+    idea:
+      action: "ToggleBookmark0"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark1"
+    binding:
+      - "ctrl+shift+1"
+    idea:
+      action: "ToggleBookmark1"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark2"
+    binding:
+      - "ctrl+shift+2"
+    idea:
+      action: "ToggleBookmark2"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark3"
+    binding:
+      - "ctrl+shift+3"
+    idea:
+      action: "ToggleBookmark3"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark4"
+    binding:
+      - "ctrl+shift+4"
+    idea:
+      action: "ToggleBookmark4"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark5"
+    binding:
+      - "ctrl+shift+5"
+    idea:
+      action: "ToggleBookmark5"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark6"
+    binding:
+      - "ctrl+shift+6"
+    idea:
+      action: "ToggleBookmark6"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark7"
+    binding:
+      - "ctrl+shift+7"
+    idea:
+      action: "ToggleBookmark7"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark8"
+    binding:
+      - "ctrl+shift+8"
+    idea:
+      action: "ToggleBookmark8"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmark9"
+    binding:
+      - "ctrl+shift+9"
+    idea:
+      action: "ToggleBookmark9"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleBookmarkWithMnemonic"
+    binding:
+      - "alt+[F3]"
+    idea:
+      action: "ToggleBookmarkWithMnemonic"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleFindInSelection"
+    binding:
+      - "ctrl+alt+[KeyE]"
+    idea:
+      action: "ToggleFindInSelection"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleFullScreen"
+    binding:
+      macos:
+        - "meta+ctrl+[KeyF]"
+      default:
+        - "alt+ctrl+[KeyF]"
+    idea:
+      action: "ToggleFullScreen"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleLineBreakpoint"
+    binding:
+      macos:
+        - "meta+[F8]"
+      default:
+        - "ctrl+[F8]"
+    idea:
+      action: "ToggleLineBreakpoint"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleRenderedDocPresentation"
+    binding:
+      - "ctrl+alt+[KeyQ]"
+    idea:
+      action: "ToggleRenderedDocPresentation"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ToggleTemporaryLineBreakpoint"
+    binding:
+      macos:
+        - "meta+shift+alt+[F8]"
+      default:
+        - "ctrl+shift+alt+[F8]"
+    idea:
+      action: "ToggleTemporaryLineBreakpoint"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.TypeHierarchy"
+    binding:
+      - "ctrl+[KeyH]"
+    idea:
+      action: "TypeHierarchy"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UiInspector"
+    binding: []
+    idea:
+      action: "UiInspector"
+      mouse:
+        - "ctrl alt button1"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UnselectPreviousOccurrence"
+    binding:
+      - "ctrl+shift+[KeyG]"
+    idea:
+      action: "UnselectPreviousOccurrence"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Unwrap"
+    binding:
+      macos:
+        - "meta+shift+[delete]"
+      default:
+        - "ctrl+shift+[delete]"
+    idea:
+      action: "Unwrap"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UsageFiltering.Imports"
+    binding:
+      - "ctrl+[KeyI]"
+    idea:
+      action: "UsageFiltering.Imports"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UsageFiltering.ReadAccess"
+    binding:
+      - "ctrl+[KeyR]"
+    idea:
+      action: "UsageFiltering.ReadAccess"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UsageFiltering.WriteAccess"
+    binding:
+      - "ctrl+[KeyW]"
+    idea:
+      action: "UsageFiltering.WriteAccess"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UsageGrouping.Directory"
+    binding:
+      - "ctrl+[KeyP]"
+    idea:
+      action: "UsageGrouping.Directory"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UsageGrouping.DirectoryStructure"
+    binding:
+      - "ctrl+[KeyD]"
+    idea:
+      action: "UsageGrouping.DirectoryStructure"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UsageGrouping.FileStructure"
+    binding:
+      - "ctrl+[KeyS]"
+    idea:
+      action: "UsageGrouping.FileStructure"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UsageGrouping.FlattenModules"
+    binding:
+      - "ctrl+[KeyO]"
+    idea:
+      action: "UsageGrouping.FlattenModules"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UsageGrouping.Module"
+    binding:
+      - "ctrl+[KeyM]"
+    idea:
+      action: "UsageGrouping.Module"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UsageGrouping.UsageType"
+    binding:
+      - "ctrl+[KeyT]"
+    idea:
+      action: "UsageGrouping.UsageType"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.UsageView.Include"
+    binding:
+      - "shift+[Backspace]"
+    idea:
+      action: "UsageView.Include"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Vcs.MoveChangedLinesToChangelist"
+    binding:
+      macos:
+        - "meta+shift+[KeyM]"
+      default:
+        - "ctrl+shift+[KeyM]"
+    idea:
+      action: "Vcs.MoveChangedLinesToChangelist"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Vcs.QuickListPopupAction"
+    binding:
+      - "ctrl+[KeyV]"
+    idea:
+      action: "Vcs.QuickListPopupAction"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Vcs.RollbackChangedLines"
+    binding:
+      macos:
+        - "meta+alt+[KeyZ]"
+      default:
+        - "ctrl+alt+[KeyZ]"
+    idea:
+      action: "Vcs.RollbackChangedLines"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Vcs.ShowMessageHistory"
+    binding:
+      - "ctrl+[KeyM]"
+    idea:
+      action: "Vcs.ShowMessageHistory"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.Vcs.ToggleAmendCommitMode"
+    binding:
+      - "ctrl+alt+[KeyM]"
+    idea:
+      action: "Vcs.ToggleAmendCommitMode"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.VcsHistory.ShowAllAffected"
+    binding:
+      macos:
+        - "meta+ctrl+[KeyA]"
+      default:
+        - "alt+ctrl+[KeyA]"
+    idea:
+      action: "VcsHistory.ShowAllAffected"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.VcsShowNextChangeMarker"
+    binding:
+      - "shift+ctrl+alt+[down]"
+    idea:
+      action: "VcsShowNextChangeMarker"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.VcsShowPrevChangeMarker"
+    binding:
+      - "shift+ctrl+alt+[up]"
+    idea:
+      action: "VcsShowPrevChangeMarker"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ViewBreakpoints"
+    binding:
+      macos:
+        - "meta+shift+[F8]"
+      default:
+        - "ctrl+shift+[F8]"
+    idea:
+      action: "ViewBreakpoints"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ViewSource"
+    binding:
+      macos:
+        - "meta+[enter]"
+      default:
+        - "ctrl+[enter]"
+    idea:
+      action: "ViewSource"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.XDebugger.AttachToProcess"
+    binding:
+      - "alt+shift+[F5]"
+    idea:
+      action: "XDebugger.AttachToProcess"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.XDebugger.JumpToTypeSource"
+    binding:
+      - "shift+[F4]"
+    idea:
+      action: "XDebugger.JumpToTypeSource"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.XDebugger.NewWatch"
+    binding:
+      - "[INSERT]"
+    idea:
+      action: "XDebugger.NewWatch"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.XDebugger.SetValue"
+    binding:
+      - "[F2]"
+    idea:
+      action: "XDebugger.SetValue"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ZoomCurrentWindow"
+    binding:
+      macos:
+        - "meta+ctrl+[Equals]"
+      default:
+        - "alt+ctrl+[Equals]"
+    idea:
+      action: "ZoomCurrentWindow"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ZoomInIdeAction"
+    binding:
+      - "ctrl+alt+[Equals]"
+    idea:
+      action: "ZoomInIdeAction"
+    vscode:
+      missing: true
+    zed:
+      missing: true
+  - id: "idea.native.ZoomOutIdeAction"
+    binding:
+      - "ctrl+alt+[Minus]"
+    idea:
+      action: "ZoomOutIdeAction"
+    vscode:
+      missing: true
+    zed:
+      missing: true

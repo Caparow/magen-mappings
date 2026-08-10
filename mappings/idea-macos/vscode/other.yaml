@@ -132,8 +132,8 @@ mapping:
       missing: true
   - id: "editor.action.extensioneditor.showfind"
     binding:
-      #- "ctrl+[KeyF]"
-      - "meta+[KeyF]"
+      macos: "meta+[KeyF]"
+      default: "ctrl+[KeyF]"
     vscode:
       action: "editor.action.extensioneditor.showfind"
       context: ["!editorFocus && activeEditor == 'workbench.editor.extension'"]

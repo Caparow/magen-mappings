@@ -27,9 +27,10 @@ mapping:
     idea:
       action: "AutoIndentLines"
     vscode:
-      action: "editor.action.reindentLines"
+      action: "editor.action.reindentlines"
     zed:
-      missing: true
+      action: "editor::Format"
+      context: ["Editor"]
   - id: "CommentByBlockComment"
     binding:
       macos:
@@ -52,7 +53,7 @@ mapping:
       action: "editor.action.blockComment"
       context: ["editorTextFocus && !editorReadonly"]
     zed:
-      action: "editor::ToggleComments"
+      action: "editor::ToggleBlockComments"
       context: ["Editor"]
   - id: "EditorBackSpace"
     binding:
@@ -134,8 +135,12 @@ mapping:
       context: ["Editor && mode == full"]
   - id: "$Redo"
     binding:
-      macos: "meta+shift+[KeyZ]"
-      default: "ctrl+shift+[KeyZ]"
+      macos:
+        - "meta+shift+[KeyZ]"
+        - "alt+shift+[Backspace]"
+      default:
+        - "ctrl+shift+[KeyZ]"
+        - "alt+shift+[Backspace]"
     idea:
       action: "$Redo"
     vscode:
@@ -189,8 +194,12 @@ mapping:
       context: ["Editor && mode == full"]
   - id: "CommentByLineComment"
     binding:
-      macos: "meta+[Slash]"
-      default: "ctrl+[Slash]"
+      macos:
+        - "meta+[Slash]"
+        - "meta+[DIVIDE]"
+      default:
+        - "ctrl+[Slash]"
+        - "ctrl+[DIVIDE]"
     idea:
       action: "CommentByLineComment"
     vscode:
@@ -203,7 +212,7 @@ mapping:
     binding:
       - "[tab]"
     idea:
-      action: "EditorIndentLineOrSelection"
+      missing: true
     vscode:
       action: "editor.action.indentLines"
       context: ["editorTextFocus && !editorReadonly"]
@@ -214,18 +223,41 @@ mapping:
     binding:
       - "shift+[tab]"
     idea:
-      action: "EditorUnindentLineOrSelection"
+      missing: true
     vscode:
       action: "editor.action.outdentLines"
       context: ["editorTextFocus && !editorReadonly"]
     zed:
       action: "editor::Outdent"
       context: ["Editor"]
-  - id: "MoveStatementDown"
+  - id: "MoveLineDown"
     binding:
       - "alt+shift+[down]"
     idea:
-      action: "MoveStatementDown"
+      missing: true
+    vscode:
+      action: "editor.action.moveLinesDownAction"
+      context: ["editorTextFocus && !editorReadonly"]
+    zed:
+      action: "editor::MoveLineDown"
+      context: ["Editor"]
+  - id: "MoveLineUp"
+    binding:
+      - "alt+shift+[up]"
+    idea:
+      missing: true
+    vscode:
+      action: "editor.action.moveLinesUpAction"
+      context: ["editorTextFocus && !editorReadonly"]
+    zed:
+      action: "editor::MoveLineUp"
+      context: ["Editor"]
+  - id: "MoveStatementDown"
+    binding:
+      macos: "meta+shift+[down]"
+      default: "ctrl+shift+[down]"
+    idea:
+      missing: true
     vscode:
       action: "editor.action.moveLinesDownAction"
       context: ["editorTextFocus && !editorReadonly"]
@@ -234,9 +266,10 @@ mapping:
       context: ["Editor"]
   - id: "MoveStatementUp"
     binding:
-      - "alt+shift+[up]"
+      macos: "meta+shift+[up]"
+      default: "ctrl+shift+[up]"
     idea:
-      action: "MoveStatementUp"
+      missing: true
     vscode:
       action: "editor.action.moveLinesUpAction"
       context: ["editorTextFocus && !editorReadonly"]

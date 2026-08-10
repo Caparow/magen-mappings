@@ -3,7 +3,8 @@ mapping:
     binding:
       - "shift shift"
     idea:
-      action: "SearchEverywhere"
+      # IntelliJ owns Double Shift as a keyboard gesture, which Magen chords cannot represent.
+      missing: true
     vscode:
       action: "workbench.action.showAllSymbols"
     zed:
@@ -42,7 +43,7 @@ mapping:
         - "[F3]"
         - "ctrl+[KeyL]"
     idea:
-      action: "FindNext"
+      missing: true
     vscode:
       action: "editor.action.nextMatchFindAction"
       context: ["editorFocus"]
@@ -59,7 +60,7 @@ mapping:
         - "shift+[F3]"
         - "ctrl+shift+[KeyL]"
     idea:
-      action: "FindPrevious"
+      missing: true
     vscode:
       action: "editor.action.previousMatchFindAction"
       context: ["editorFocus"]
@@ -70,7 +71,7 @@ mapping:
     binding:
       - "[enter]"
     idea:
-      action: "FindNext"
+      missing: true
     vscode:
       action: "editor.action.nextMatchFindAction"
       context: ["editorFocus && findInputFocussed"]
@@ -81,7 +82,7 @@ mapping:
     binding:
       - "shift+[enter]"
     idea:
-      action: "FindPrevious"
+      missing: true
     vscode:
       action: "editor.action.previousMatchFindAction"
       context: ["editorFocus && findInputFocussed"]

@@ -1,7 +1,7 @@
 mapping:
   - id: "Scala.ShowImplicits"
     binding:
-      - "shift+ctrl+alt+[Equal]"
+      - "shift+ctrl+alt+[Equals]"
       - "shift+ctrl+alt+[ADD]"
     idea:
       action: "Scala.ShowImplicits"
